@@ -4,7 +4,8 @@ module.exports = {
     runReminders(database) {
         database.find({}, (err, docs) => {
             for (let tracker of docs) {
-                if (tracker.takenAt[ tracker.takenAt.length ] + tracker.interval < dateFns.getTime() - 1800000) {
+                if (tracker.takenAt[ tracker.takenAt.length ] + tracker.interval < dateFns.getTime() - 1800000
+                    && tracker.concluded) {
                     //TODO - send push notification reminders
                 }
             }
