@@ -15,16 +15,23 @@ function App() {
         <Topbar />
         <div style={{ display: 'flex', flexGrow: 1 }}>
           <Sidebar />
-          <div style={{ display: 'flex', flexGrow: 1 }}>
+          <div style={{ display: 'flex', flexGrow: 1, justifyContent: 'center' }}>
             <Switch>
-              <Route path="/user/:uid">
-                <MainPatientScreen patient={{ name: 'Mati', surname: 'Obrzut', PESEL: '80110185932' }} />
+              <Route path="/pacjent">
+                <MainPatientScreen patient={ { name: 'Mati', surname: 'Obrzut', PESEL: '80110185932' }} />
+              </Route>
+              <Route path="/medicine">
+                <MedicineList/>
+              </Route>
+              <Route path="/history">
+                <ExaminationHistory/>
               </Route>
               <Route path="/">
                 <h1>
                   Proszę wybać pacjenta
-              </h1>
+                </h1>
               </Route>
+
             </Switch>
           </div>
         </div>
