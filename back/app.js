@@ -77,6 +77,12 @@ app.get('/api/meds_on/:patientId/:date', (req, res) => {
     res.send(medicineTaken);
 });
 
+//get all checkups of patient
+app.get('/api/checkups/:patientId', (req, res) => {
+    patientDb.findOne({ _id: req.params.patientId }, (err, doc) => {
+        res.send(doc.checkups);
+    });
+});
 
 //-----UPDATE/ADD ENDPOINTS-----
 
@@ -108,6 +114,17 @@ app.post('/api/prescribe/:id', (req, res) => {
     updatedMedicines.push(req.body);
     patientDb.update({_id: req.params.id}, { $set: {medicine: updatedMedicines} });
     res.send({status: 'ok, medicine prescribed to patient'});
+});
+
+//add checkup to patient
+app.post('/api/checkups/:patientId', (req, res) => {
+    updatedCheckups;
+    patientDb.findOne({ _id: req.params.patientId }, (err, doc) => {
+        updatedCheckups = doc.checkups;
+        updatedCheckups.push(req.body);
+        patientDb.update({_id: req.params.patientId}, { $set: {checkups: updatedCheckups} });
+        res.send({status: 'ok, checkup added to patients record'});
+    });
 });
 
 app.listen(port, () => console.log(`Server listening on port ${port}!`));
