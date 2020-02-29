@@ -1,0 +1,16 @@
+.examHistoryContainer {
+}
+.examHistoryLabel {
+    display: block;
+    font-size:22px;
+    background-color: #ffbc1a;
+    border-radius: 8px;
+    padding:5px;
+    text-align: center;
+    margin: auto;
+    width:80%;
+}
+.examHistoryHeader > div {
+    text-align: center;
+    font-size: 22px;
+}

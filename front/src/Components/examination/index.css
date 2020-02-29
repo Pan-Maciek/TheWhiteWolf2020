@@ -1,0 +1,25 @@
+.examinationContainer {
+
+}
+.examinationContainer > div {
+    border: solid black 2px;
+    text-align: center;
+    border-radius: 10px;
+}
+.examinationContainer > div:first-child {
+    overflow-y: auto;
+}
+.examDescription {
+    display: inline-block;
+    width: 70%;
+    max-height:80px;
+}
+.examDate {
+    display: inline-block;
+    width: 20%;
+    margin:auto;
+}
+.examPdfIcon {
+    display: inline-block;
+    width: 8%;
+}
