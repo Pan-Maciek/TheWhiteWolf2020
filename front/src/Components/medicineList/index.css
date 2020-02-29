@@ -1,33 +1,38 @@
-.medicineList {
-
+.medicineListDiv {
+    font-size:18px;
+}
+.someMedicine > div:last-child > div:last-child {
+    border-radius:0 0 10px 0;
+}
+.someMedicine > div:last-child > div:first-child {
+    border-radius:0 0 0 10px;
 }
 
-.addMedicineInput {
+.newMedicineForm > input {
     padding: 5px 10px;
+    text-align: center;
+    background-color: #c7c7c7;
+
 }
 .newMedicineForm>input::placeholder {
     text-align: center;
 }
 
-.addMedicineLabel {
-    display: block;
-    background-color: #ffb500;
-    width: 40%;
-    margin:5px auto;
-    border-radius: 6px;
-}
-
 .medicineLabel {
     width:90%;
     margin: 5px auto;
-    background-color: green;
+    background-color: #1bc71c;
     display:block;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 22px;
+    font-weight: 500;
     text-align: center;
 }
+
 .listHeader > div {
-    font-size: 20px;
+    text-align: center;
+    background-color: #ffd428;
+    font-size: 21px;
     font-weight: bold;
     padding: 3px 0;
 }
@@ -38,5 +43,13 @@
 }
 
 .listHeader {
-    border: solid black 1px;
+    border:solid white 1px;
+}
+
+.listHeader > div:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.listHeader > div:last-child {
+    border-radius: 0 10px 0 0;
 }
