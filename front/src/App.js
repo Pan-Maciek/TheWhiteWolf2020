@@ -15,7 +15,7 @@ function App() {
         <Topbar />
         <div style={{ display: 'flex', flexGrow: 1 }}>
           <Sidebar />
-          <div style={{ display: 'flex', flexGrow: 1 }}>
+          <div class ="routeContainer" style={{ display: 'flex', flexGrow: 1 }}>
             <Switch>
               <Route path="/user">
                 <MainPatientScreen patient={{ name: 'Mati', surname: 'Obrzut', PESEL: '80110185932' }} />
