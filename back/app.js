@@ -7,7 +7,7 @@ const cron = require('node-cron');
 const { runReminders } = require('./extras');
 
 //db setup
-const patientDb = new Datastore({filename: './patientDb.json', autoload: true});
+const patientDb = new Datastore({ filename: './patientDb.json', autoload: true });
 /*const medTrackerDb = new Datastore({filename: './medTrackerDb.json', autoload: true}); - this line, for some damn reason,
                                                                                            resets the db every time it's triggered,
                                                                                            even though the line just above it is
@@ -28,19 +28,19 @@ app.use(bodyParser.json());
 
 //get ID of patient by PESEL
 app.post('/api/get_uid', (req, res) => {
-    patientDb.find({pesel: req.body.id}, (err, docs) => res.send(docs[0]._id));
+    patientDb.find({ pesel: req.body.id }, (err, docs) => res.send(docs[0]._id));
 });
 
 //get all patient info by ID
 app.get('/api/get_all/:id', (req, res) => {
-    patientDb.find({_id: req.params.id}, function(err, docs) {
+    patientDb.find({ _id: req.params.id }, function (err, docs) {
         res.send(docs);
     });
 });
 
 //get patient name, surname, date of birth and PESEL
 app.get('/api/get_personal/:id', (req, res) => {
-    patientDb.findOne({_id: req.params.id}, function(err, doc) {
+    patientDb.findOne({ _id: req.params.id }, function (err, doc) {
         res.send(
             {
                 "name": doc.name,
@@ -54,14 +54,14 @@ app.get('/api/get_personal/:id', (req, res) => {
 
 //get all medicine patient is taking and has ever taken
 app.get('/api/get_medicine/:id', (req, res) => {
-    patientDb.find({_id: req.params.id}, function(err, docs) {
+    patientDb.find({ _id: req.params.id }, function (err, docs) {
         res.send(docs[0].medicine);
     });
 });
 
 //get medicine-taking history
 app.get('/api/get_history/:patientId/:medicine', (req, res) => {
-    medTrackerDb.findOne({patientId: req.params.patientId, medicine: req.params.medicine}, function(err, doc) {
+    medTrackerDb.findOne({ patientId: req.params.patientId, medicine: req.params.medicine }, function (err, doc) {
         res.send(doc.takenAt);
     });
 });
@@ -71,8 +71,8 @@ app.get('/api/get_history/:patientId/:medicine', (req, res) => {
 
 //update patient
 app.post('/api/update_patient/:id', (req, res) => {
-    patientDb.update({ _id: req.params.id }, req.body, {}, function(err, numReplaced) {
-       res.send({ status: 'ok, updated patient' });
+    patientDb.update({ _id: req.params.id }, req.body, {}, function (err, numReplaced) {
+        res.send({ status: 'ok, updated patient' });
     });
 });
 
@@ -89,3 +89,18 @@ app.post('/api/add_tracker', (req, res) => {
 });
 
 app.listen(port, () => console.log(`Server listening on port ${port}!`));
+
+const fs = require('fs')
+const data = JSON.parse(fs.readFileSync('./data.json'))
+
+app.get('/api/complete/:name', (req, res) => {
+    const name = req.params.name
+    res.send(data.filter(x => x.name.toLowerCase().startsWith(name)).slice(0, 5))
+})
+
+const { findColiding } = require('./webscrap.js')
+app.post('/api/coliding', async (req, res) => {
+    const data = await findColiding(req.body.drugs)
+    console.log(data)
+    res.send(data)
+})
