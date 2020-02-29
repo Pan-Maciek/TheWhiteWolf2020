@@ -1,0 +1,12 @@
+.PatientDetails{
+    font-family: Arial, Helvetica, sans-serif;
+    left: auto;
+}
+.Drugs{
+    width: 48%;
+    float: left
+}
+.LastVisits{
+    width: 48%;
+    float: right;
+}
