@@ -4,7 +4,7 @@ const port = 5000;
 const bodyParser = require('body-parser');
 const Datastore = require('nedb')
 const cron = require('node-cron');
-const runReminders = require('./extras/runReminders');
+const { runReminders } = require('./extras');
 
 //db setup
 const patientDb = new Datastore({filename: './patientDb.json', autoload: true});
