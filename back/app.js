@@ -8,11 +8,7 @@ const { runReminders } = require('./extras');
 
 //db setup
 const patientDb = new Datastore({filename: './patientDb.json', autoload: true});
-/*const medTrackerDb = new Datastore({filename: './medTrackerDb.json', autoload: true}); - this line, for some damn reason,
-                                                                                           resets the db every time it's triggered,
-                                                                                           even though the line just above it is
-                                                                                           identical and does not do that
-*/
+const medTrackerDb = new Datastore({filename: './medTrackerDb.json', autoload: true});
 
 //cron setup to run reminder check every 30 minutes
 cron.schedule('30 * * * *', () => {
