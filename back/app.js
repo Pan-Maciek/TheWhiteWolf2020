@@ -12,6 +12,7 @@ const medTrackerDb = new Datastore({filename: './medTrackerDb.json', autoload: t
 
 //cron setup to run reminder check every 30 minutes
 cron.schedule('30 * * * *', () => {
+    medTrackerDb.persistence.compactDatafile();
     runReminders(medTrackerDb);
 });
 
