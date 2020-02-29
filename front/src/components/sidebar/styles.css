@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
     border: 1px solid grey;
     border-top: none;
+    box-sizing: border-box;
 }
 
 .sidebarIcon {

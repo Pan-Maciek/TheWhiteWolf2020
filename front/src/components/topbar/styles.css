@@ -1,17 +1,21 @@
-#topbarWrapper {
+.topbarWrapper {
     width: 100vw;
-    height: 35px;
     border: 1px solid grey;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
-#idInput {
+.idInput {
     font-size: 1em;
+    padding: 10px;
+    width: 70%;
+    max-width: 600px;
 }
 
-#searchButton {
-    margin: 0px 2vw;
+.searchButton {
     font-size: 1em;
+    height: 42px;
 }
