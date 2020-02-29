@@ -1,0 +1,22 @@
+.medicineContainer {
+    border: solid black 1px;
+}
+
+.medicineName, .douse, .from, .to {
+    display: inline-block;
+    border: solid black 1px;
+}
+.medicineName{
+    width:44%;
+    padding:2px 5px;
+}
+.douse {
+    width:20%;
+    text-align: center;
+    padding:2px 5px;
+}
+.from, .to {
+    width:18%;
+    text-align: center;
+    padding:2px 5px;
+}
