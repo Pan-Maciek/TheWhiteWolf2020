@@ -11,6 +11,9 @@ const db = new Datastore({filename: './db.json', autoload: true});
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
+//-----GET ENDPOINTS-----
+
 //get ID of patient by PESEL
 app.get('/api/get_uid/:pesel', (req, res) => {
     db.find({pesel: req.params.pesel}, function(err, docs) {
@@ -25,6 +28,16 @@ app.get('/api/get_all/:id', (req, res) => {
         res.send(docs);
     });
 });
+
+//get all medicine patient is taking and has ever taken
+app.get('/api/get_medicine/:id', (req, res) => {
+    db.find({_id: req.params.id}, function(err, docs) {
+        res.send(docs[0].medicine);
+    });
+});
+
+
+//-----UPDATE/ADD ENDPOINTS-----
 
 //update patient
 app.post('/api/update/:id', (req, res) => {
