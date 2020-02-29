@@ -88,4 +88,15 @@ app.post('/api/add_tracker', (req, res) => {
     res.send({ status: 'ok, added new tracker' });
 });
 
+//prescribe medicine to patient
+app.post('/api/prescribe/:id', (req, res) => {
+    updatedMedicines;
+    patientDb.findOne({_id: req.params.id}, (err, doc) => {
+        updatedMedicines = doc.medicine;
+    });
+    updatedMedicines.push(req.body);
+    patientDb.update({_id: req.params.id}, { $set: {medicine: updatedMedicines} });
+    res.send({status: 'ok, medicine prescribed to patient'});
+});
+
 app.listen(port, () => console.log(`Server listening on port ${port}!`));
