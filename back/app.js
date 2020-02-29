@@ -11,8 +11,16 @@ const db = new Datastore({filename: './db.json', autoload: true});
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//get patient info by PESEL
-app.get('/api/:id', (req, res) => {
+//get ID of patient by PESEL
+app.get('/api/pesel/:pesel', (req, res) => {
+    db.find({pesel: req.params.pesel}, function(err, docs) {
+        if (docs == []) res.send('');
+        else res.send(docs[0]._id);
+    });
+});
+
+//get all patient info by ID
+app.get('/api/all/:id', (req, res) => {
     db.find({_id: req.params.id}, function(err, docs) {
         res.send(docs);
     });
