@@ -1,25 +1,33 @@
 .examinationContainer {
+    display:flex;
+    background-color: #f1f1f1;
+    /*border: white solid 2px;*/
+}
+.examinationContainer > td {
+    display:inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    margin:auto;
 
 }
-.examinationContainer > div {
-    border: solid black 2px;
-    text-align: center;
-    border-radius: 10px;
-}
-.examinationContainer > div:first-child {
+.examinationContainer > td:first-child {
     overflow-y: auto;
 }
 .examDescription {
     display: inline-block;
-    width: 70%;
+    width: 78%;
     max-height:80px;
 }
 .examDate {
     display: inline-block;
-    width: 20%;
+    width: 16%;
     margin:auto;
 }
 .examPdfIcon {
     display: inline-block;
-    width: 8%;
+    width: 6%;
+}
+
+td:last-child {
+    cursor: pointer;
 }

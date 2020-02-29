@@ -5,31 +5,33 @@ export default class MainPatientScreen extends React.Component {
     render() {
         const { name, surname, PESEL } = this.props.patient
         return (
-            <div style={{ marginRight: '88px' }}>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Imię</td>
-                            <td>{name}</td>
-                        </tr>
-                        <tr>
-                            <td>Nazwisko</td>
-                            <td>{surname}</td>
-                        </tr>
-                        <tr>
-                            <td>Wiek</td>
-                            <td>{this.ageFromPESEL(PESEL)}</td>
-                        </tr>
-                        <tr>
-                            <td>Data urodzenia</td>
-                            <td>{this.DOBfromPESEL(PESEL)}</td>
-                        </tr>
-                        <tr>
-                            <td>PESEL</td>
-                            <td>{PESEL}</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div style={{    marginTop: "30px", marginRight: '88px'}}>
+                <div className="patientTableContainer">
+                    <table style={{maxWidth:"657px"}}>
+                        <tbody>
+                            <tr>
+                                <td>Imię</td>
+                                <td>{name}</td>
+                            </tr>
+                            <tr>
+                                <td>Nazwisko</td>
+                                <td>{surname}</td>
+                            </tr>
+                            <tr>
+                                <td>Wiek</td>
+                                <td>{this.ageFromPESEL(PESEL)}</td>
+                            </tr>
+                            <tr>
+                                <td>Data urodzenia</td>
+                                <td>{this.DOBfromPESEL(PESEL)}</td>
+                            </tr>
+                            <tr>
+                                <td>PESEL</td>
+                                <td>{PESEL}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         )
     }
