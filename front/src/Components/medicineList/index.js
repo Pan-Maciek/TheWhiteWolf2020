@@ -9,11 +9,13 @@ export default class MedicineList extends Component {
         this.state = {
             name: null,
             douse: null,
-            password: null,
+            from: null,
+            to: null,
             errors: {
-                fullName: '',
-                email: '',
-                password: '',
+                name: '',
+                douse: '',
+                from: '',
+                to: ''
             }
         };
     }
