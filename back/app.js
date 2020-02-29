@@ -15,11 +15,8 @@ app.use(bodyParser.json());
 //-----GET ENDPOINTS-----
 
 //get ID of patient by PESEL
-app.get('/api/get_uid/:pesel', (req, res) => {
-    db.find({pesel: req.params.pesel}, function(err, docs) {
-        if (docs == []) res.send('');
-        else res.send(docs[0]._id);
-    });
+app.post('/api/get_uid', (req, res) => {
+    db.find({pesel: req.body.id}, (err, docs) => res.send(docs[0]._id));
 });
 
 //get all patient info by ID
