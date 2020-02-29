@@ -60,6 +60,22 @@ app.get('/api/get_history/:patientId/:medicine', (req, res) => {
     });
 });
 
+//get all medicines taken on a given day
+app.get('/api/meds_on/:patientId/:date', (req, res) => {
+    medicineTaken = [];
+    medTrackerDb.find({ patientId: req.params.patientId }, (err, docs) => {
+        for (let tracker of docs) {
+            for (let date of tracker.takenAt) {
+                if (date % 86400000 == req.params.date % 86400000) {
+                    medicineTaken.push(tracker.medicine);
+                    break;
+                }
+            }
+        }
+    });
+    res.send(medicineTaken);
+});
+
 
 //-----UPDATE/ADD ENDPOINTS-----
 
