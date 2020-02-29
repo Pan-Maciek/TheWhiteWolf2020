@@ -26,6 +26,20 @@ app.get('/api/get_all/:id', (req, res) => {
     });
 });
 
+//get patient name, surname, date of birth and PESEL
+app.get('/api/get_personal/:id', (req, res) => {
+    db.findOne({_id: req.params.id}, function(err, doc) {
+        res.send(
+            {
+                "name": doc.name,
+                "surname": doc.surname,
+                "birthday": doc.birthday,
+                "PESEL": doc.pesel
+            }
+        );
+    });
+});
+
 //get all medicine patient is taking and has ever taken
 app.get('/api/get_medicine/:id', (req, res) => {
     db.find({_id: req.params.id}, function(err, docs) {
