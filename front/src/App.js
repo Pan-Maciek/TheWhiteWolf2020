@@ -4,6 +4,7 @@ import Topbar from './components/topbar';
 import Sidebar from './components/sidebar';
 import MainPatientScreen from './components/mainPatientScreen'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ExaminationHistory from "./components/examinationHistory";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
             </div>
         </Router>
     );
+
 }
 
 export default App;
