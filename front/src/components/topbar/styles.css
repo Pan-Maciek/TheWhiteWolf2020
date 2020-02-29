@@ -1,0 +1,17 @@
+#topbarWrapper {
+    width: 100vw;
+    height: 35px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#idInput {
+    font-size: 1em;
+}
+
+#searchButton {
+    margin: 0px 2vw;
+    font-size: 1em;
+}
