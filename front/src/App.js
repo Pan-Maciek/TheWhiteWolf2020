@@ -3,7 +3,7 @@ import './App.css';
 import Topbar from './components/topbar';
 import Sidebar from './components/sidebar';
 import MainPatientScreen from './components/mainPatientScreen'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ExaminationHistory from "./components/examinationHistory";
 import MedicineList from "./components/medicineList";
 
@@ -20,10 +20,10 @@ function App() {
               <Route path="/pacjent">
                 <MainPatientScreen patient={ { name: 'Mati', surname: 'Obrzut', PESEL: '80110185932' }} />
               </Route>
-              <Route path="/medicine">
+              <Route path="/leki">
                 <MedicineList/>
               </Route>
-              <Route path="/history">
+              <Route path="/badania">
                 <ExaminationHistory/>
               </Route>
               <Route path="/">
