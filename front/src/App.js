@@ -5,8 +5,10 @@ import Sidebar from './components/sidebar';
 import MainPatientScreen from './components/mainPatientScreen'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ExaminationHistory from "./components/examinationHistory";
+import MedicineList from "./components/medicineList";
 
 function App() {
+
   return (
     <>
       <Router>

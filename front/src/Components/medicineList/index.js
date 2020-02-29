@@ -43,7 +43,7 @@ export default class MedicineList extends Component {
                 to: "15-03-2020"
             },
             {
-                name: "Alcacet",
+                name: "Altacet",
                 douse: 1,
                 from: "28-02-2020",
                 to: "28-03-2020"
@@ -73,7 +73,7 @@ export default class MedicineList extends Component {
         return (
             <div className="medicineListDiv">
 
-                <label className="medicineLabel">Aktualne leki</label>
+                <label className="medicineLabel">Leki zażywane aktualnie</label>
                 <div className="listHeader">
                     <div className="medicineName">Lek</div>
                     <div className="douse">Dawka(dzienna)</div>
@@ -88,14 +88,16 @@ export default class MedicineList extends Component {
                     <input className="to" placeholder="Do"/>
 
                 </form>
-                {currentMedicine.map((medicine, key) => {
-                    return <Medicine key={key} obj = {medicine}/>
-                })}
+                <div className="someMedicine">
+                    {currentMedicine.map((medicine, key) => {
+                        return <Medicine key={key} obj = {medicine}/>
+                    })}
+                </div>
 
 
 
                 <br/>
-                <label className="medicineLabel">Przedawnione leki</label>
+                <label className="medicineLabel">Leki zażywane dawniej</label>
 
                 <div className="listHeader">
                     <div className="medicineName">Lek</div>
@@ -103,10 +105,11 @@ export default class MedicineList extends Component {
                     <div className="from">Od</div>
                     <div className="to">Do</div>
                 </div>
-
-                {pastMedicine.map((medicine, key) => {
-                    return <Medicine key={key} obj = {medicine}/>
-                })}
+                <div className="someMedicine">
+                    {pastMedicine.map((medicine, key) => {
+                        return <Medicine key={key} obj = {medicine}/>
+                    })}
+                </div>
 
             </div>
         )
