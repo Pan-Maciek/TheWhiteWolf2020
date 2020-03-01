@@ -1,7 +1,7 @@
 const express = require('express');
 const webPush = require('web-push');
 const bodyParser = require('body-parser');
-const Datastore = require('nedb')
+const Datastore = require('nedb');
 const cron = require('node-cron');
 
 const app = express();
@@ -135,8 +135,8 @@ app.get('/api/meds_on/:patientId/:date', (req, res) => {
     const medicineTaken = [];
     medTrackerDb.find({ patientId: req.params.patientId }, (err, docs) => {
         for (let tracker of docs) {
-            for (let date of tracker.takenAt) {
-                if (date % 86400000 == req.params.date % 86400000) {
+            for (let takeTerm of tracker.takenAt) {
+                if (takeTerm.date % 86400000 == req.params.date % 86400000) {
                     medicineTaken.push(tracker.medicine);
                     break;
                 }
@@ -178,7 +178,7 @@ app.post('/api/add_tracker', (req, res) => {
 app.post('/api/med_taken/:id/:med', (req, res) => {
     medTrackerDb.findOne({ patientID: req.params.id, medicine: req.params.med }, (error, doc) => {
         updatedTaken = doc.takenAt;
-        updatedTaken.push(Date.now());
+        updatedTaken.push({date: Date.now(), taken: true});
         medTrackerDb.update({ patientID: req.params.id, medicine: req.params.med }, { $set: { takenAt: updatedTaken }}, {multi: true}, function(err, numReplaced) {});
     });
     res.send({ status: 'ok, added taking of medicine' })
