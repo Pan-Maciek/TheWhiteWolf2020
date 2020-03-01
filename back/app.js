@@ -28,14 +28,11 @@ function runReminders(database) {
                     webPush.sendNotification(subscription, payload).catch(err => console.error(err));
                 });
             }
-            //the code below DOES NOT WORK
-            /*
-            else if (tracker.takenAt[tracker.takenAt.length] - Date.now() > 5400000) {
+            else if (tracker.takenAt[tracker.takenAt.length].date - Date.now() > 5400000) {
                 updatedTaken = tracker.takenAt;
-                updatedTaken.push(-1);
+                updatedTaken.push({date: Date.now(), taken: false});
                 patientDb.update(tracker, { $set: { takenAt: updatedTaken }}, {multi: true}, function(err, numReplaced) {});
             }
-            */
         }
     });
 }
