@@ -29,11 +29,13 @@ function runReminders(database) {
                 });
             }
             //the code below DOES NOT WORK
+            /*
             else if (tracker.takenAt[tracker.takenAt.length] - Date.now() > 5400000) {
                 updatedTaken = tracker.takenAt;
                 updatedTaken.push(-1);
                 patientDb.update(tracker, { $set: { takenAt: updatedTaken }}, {multi: true}, function(err, numReplaced) {});
             }
+            */
         }
     });
 }
