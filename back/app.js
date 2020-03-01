@@ -91,6 +91,14 @@ app.get('/api/get_all/:id', (req, res) => {
 //get patient name, surname, date of birth and PESEL
 app.post('/api/get_personal', (req, res) => {
     patientDb.findOne({ _id: req.body.uid }, (err, doc) => {
+        if (!doc)
+        res.send({
+            name: '',
+            surname: '',
+            birthday: '',
+            PESEL: ''
+        });
+        else
         res.send({
             name: doc.name,
             surname: doc.surname,
