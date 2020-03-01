@@ -3,6 +3,7 @@ import './index.css'
 import moment from 'moment'
 
 export default class PersonalPatientScreen extends React.Component {
+    state = { hide: true }
     render() {
         const { drugs } = this.props.drugs || []
         let date = new Date()
@@ -42,37 +43,44 @@ export default class PersonalPatientScreen extends React.Component {
                     </table>
 
 
-                        <div className="foo1">
-                            <div className="foo2">
-                                <p>Pon</p>
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div className="foo2">
-                                <p>Wt</p>
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div className="foo2">
-                                <p>Śr</p>
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div className="foo2">
-                                <p>Czw</p>
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div className="foo2">
-                                <p>Pt</p>
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div className="foo2">
-                                <p>Sob</p>
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div className="foo2">
-                                <p>Nd</p>
-                                <i class="fas fa-check"></i>
-                            </div>
+                    <div className="foo1">
+                        <div className="foo2">
+                            <p>Pon</p>
+                            <i class="fas fa-2x fa-check"></i><br />
+                            <i class="far fa-2x fa-sad-cry"></i>
+                        </div>
+                        <div className="foo2">
+                            <p>Wt</p>
+                            <i class="fas fa-2x fa-check"></i><br />
+                            <i class="far fa-2x fa-sad-cry"></i>
+                        </div>
+                        <div className="foo2">
+                            <p>Śr</p>
+                            <i class="fas fa-2x fa-check"></i><br />
+                            <i class="far fa-2x fa-meh"></i>
+                        </div>
+                        <div className="foo2">
+                            <p>Czw</p>
+                            <i class="fas fa-2x fa-check"></i><br />
+                            <i class="far fa-2x fa-meh"></i>
+                        </div>
+                        <div className="foo2">
+                            <p>Pt</p>
+                            <i class="fas fa-2x fa-check"></i><br />
+                            <i class="far fa-2x fa-smile"></i>
+                        </div>
+                        <div className="foo2">
+                            <p>Sob</p>
+                            <i class="fas fa-2x fa-check"></i><br />
+                            <i class="far fa-2x fa-smile"></i>
+                        </div>
+                        <div className="foo2" onClick={() => this.setState({ hide: false })}>
+                            <p>Nd</p>
+                            <i class="fas fa-2x fa-check"></i><br />
+                            <i class={`far fa-2x fa-grin-hearts ${this.state.hide ? 'hide' : ''}`}></i>
                         </div>
                     </div>
+                </div>
             </>
         )
     }
