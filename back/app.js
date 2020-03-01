@@ -83,7 +83,10 @@ cron.schedule('30 * * * *', () => {
 
 //get ID of patient by PESEL
 app.post('/api/get_uid', (req, res) => {
-    patientDb.find({ pesel: req.body.id }, (err, docs) => res.send(docs[0]._id));
+    patientDb.find({ pesel: req.body.id }, (err, docs) => {
+        if (docs[0]) res.send(docs[0]._id);
+        else res.send('');
+    });
 });
 
 //get all patient info by ID
