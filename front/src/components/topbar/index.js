@@ -22,6 +22,13 @@ class Topbar extends Component {
             url: '/api/get_uid',
             data: { id: this.state.id }
         }).then(res => res.data)
+        const user = await axios({
+            method: 'post',
+            url: '/api/get_personal',
+            data: { uid }
+        }).then(res => res.data)
+        localStorage.setItem('uid', uid)
+        localStorage.setItem('user', JSON.stringify(user))
         this.props.history.push(`/user/${uid}`)
     }
 }

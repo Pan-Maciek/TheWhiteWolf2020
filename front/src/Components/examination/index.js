@@ -10,11 +10,11 @@ export default class Examination extends Component {
         const {description,date,details} = this.props.obj || {};
 
         return (
-            <div className="examinationContainer">
-                <div className="examDescription">{description}</div>
-                <div className="examDate">{date}</div>
-                <div className="examPdfIcon"><FontAwesomeIcon icon={faFilePdf} size="2x" style={{color: 'green'}} /></div>
-            </div>
+            <tr className="examinationContainer">
+                <td className="examDescription">{description}</td>
+                <td className="examDate">{date}</td>
+                <td className="examPdfIcon"><FontAwesomeIcon icon={faFilePdf} size="2x" style={{color: '#cc3f3f'}} /></td>
+            </tr>
         )
     }
 

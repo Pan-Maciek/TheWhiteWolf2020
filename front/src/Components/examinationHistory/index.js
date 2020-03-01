@@ -39,14 +39,19 @@ export default class ExaminationHistory extends Component {
         return (
             <div className="examHistoryContainer">
                 <label className="examHistoryLabel">Historia badań pacjenta</label>
-                <div className="examHistoryHeader">
-                    <div className="examDescription">Opis</div>
-                    <div className="examDate">Data</div>
-                    <div className="examPdfIcon">Pdf</div>
+                <div className="historyContainer">
+                    <table>
+                        <tr>
+                            <th className="examDescription">Opis</th>
+                            <th className="examDate">Data</th>
+                            <th className="examPdfIcon">Pdf</th>
+                        </tr>
+                        {history.map((examination, key) => {
+                            return <Examination key={key} obj = {examination}/>
+                        })}
+                    </table>
                 </div>
-                {history.map((examination, key) => {
-                    return <Examination key={key} obj = {examination}/>
-                })}
+
             </div>
         )
     }
