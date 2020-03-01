@@ -6,7 +6,6 @@ import MainPatientScreen from './components/mainPatientScreen'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ExaminationHistory from "./components/examinationHistory";
 import MedicineList from "./components/medicineList";
-import PersonalPatientScreen from './components/PersonalPatientPanel';
 
 function App() {
 
@@ -14,6 +13,7 @@ function App() {
     <>
       <Router>
         <Topbar />
+        
         <div style={{ display: 'flex', flexGrow: 1 }}>
           <Sidebar />
           <div style={{ display: 'flex', flexGrow: 1, justifyContent: 'center' }}>
