@@ -1,18 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './index.css';
 
 export default class Medicine extends Component {
 
     render() {
-        const {name,dose,from,to} = this.props.obj || {};
-
+        const { name, dose, from, to } = this.props.obj || {};
         return (
-            <div className="medicineContainer">
-                <div className="medicineName">{name}</div>
-                <div className="douse">{dose}</div>
-                <div className="from">{from}</div>
-                <div className="to">{to}</div>
-            </div>
+            <tr className={this.props.warnings.some(x => x.startsWith(name)) ? 'warn' : ''}>
+                <td>{name}</td>
+                <td>{dose}</td>
+                <td>{from}</td>
+                <td>{to}</td>
+            </tr>
         )
     }
 }

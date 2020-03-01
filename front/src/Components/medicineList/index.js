@@ -12,12 +12,9 @@ export default class MedicineList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: null,
-            dose: null,
-            from: null,
-            to: null,
+            name: '', dose: 0, from: 0, to: 0,
             currentMedicine: [],
-            pastMedicine: []
+            pastMedicine: [], warnings: []
         };
 
         this.handleNameChange = this.handleNameChange.bind(this);
@@ -37,8 +34,14 @@ export default class MedicineList extends Component {
             "to": this.getUnixTime(this.state.to)
         }
         axios.post(`/api/prescribe/${localStorage.getItem("uid")}`, data);
-        console.log(this.state)
-        this.setState({currentMedicine:[ ...this.state.currentMedicine, data]})
+        this.setState({
+            currentMedicine: [...this.state.currentMedicine, data],
+            name: '',
+            dose: 0,
+            from: '',
+            to: '',
+            warnings: []
+        })
     }
 
 
@@ -55,7 +58,6 @@ export default class MedicineList extends Component {
     }
 
     getUnixTime(strDate) {
-
         var datum = Date.parse(strDate);
         return datum / 1000;
     }
@@ -63,50 +65,52 @@ export default class MedicineList extends Component {
     handleNameChange = (event) => {
         event.preventDefault();
         this.setState({ name: event.target.value });
-        this.checkForFormFilledIn();
     };
     handleDoseChange = (event) => {
         event.preventDefault();
         this.setState({ dose: event.target.value });
-        this.checkForFormFilledIn();
     };
     handleFromChange = (event) => {
         event.preventDefault();
         this.setState({ from: event.target.value });
-        this.checkForFormFilledIn();
     };
     handleToChange = (event) => {
         event.preventDefault();
         this.setState({ to: event.target.value });
-        this.checkForFormFilledIn();
     };
-    checkForFormFilledIn() {
-        if (this.state.name && this.state.dose && this.state.from && this.state.to) {
-            document.getElementById("addMedicineSubmit").style.display = "block";
-        }
-    }
 
     parseMedicine(res) {
         let resultCurrent = [];
         let resultPast = [];
         res.forEach((ele) => {
-            if(ele.to < this.getUnixTime(Date.now()))
-                resultPast.push({name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString()});
+            if (ele.to < this.getUnixTime(Date.now()))
+                resultPast.push({ name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString() });
             else
-                resultCurrent.push({name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString()});
+                resultCurrent.push({ name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString() });
         });
-        return {"current": resultCurrent, "past": resultPast};
+        return { "current": resultCurrent, "past": resultPast };
     }
 
-    getData() {
-        axios.get(`/api/get_medicine/${localStorage.getItem("uid")}`)
-            .then(res => {
-                this.setState({ currentMedicine: this.parseMedicine(res.data).current, pastMedicine: this.parseMedicine(res.data).past });
-            });
+    async getData() {
+        const data = await axios.get(`/api/get_medicine/${localStorage.getItem("uid")}`).then(res => res.data)
+        this.setState({ currentMedicine: this.parseMedicine(data).current, pastMedicine: this.parseMedicine(data).past })
     }
 
-    componentWillMount() {
-        this.getData();
+    async getWarnings() {
+        const data = await axios({
+            method: 'post',
+            url: '/api/coliding',
+            data: { drugs: this.state.currentMedicine.map(x => x.name) }
+        }).then(res => res.data)
+        this.setState({
+            warnings: data.map(x => x.split('+').map(x => x.trim()))
+                .reduce((acc, x) => [...acc, ...x], [])
+        })
+    }
+
+    async componentWillMount() {
+        await this.getData();
+        await this.getWarnings();
     }
 
     render() {
@@ -114,43 +118,60 @@ export default class MedicineList extends Component {
         return (
             <div className="medicineListDiv">
 
-                <label className="medicineLabel">Leki zażywane aktualnie</label>
-                <div className="listHeader">
-                    <div className="medicineName">Lek</div>
-                    <div className="douse">Dawka(dzienna)</div>
-                    <div className="from">Od</div>
-                    <div className="to">Do</div>
+                <h2>Leki zażywane aktualnie</h2>
+                <div style={{}}>
+                    <button onClick={this.handleSubmit} className="addNew1">+</button>
+                    <div className="wrap1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Lek</td>
+                                    <td>Dawka</td>
+                                    <td>Od</td>
+                                    <td>Do</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <SuggestionInput completionUrl="/api/complete" placeholder="Nazwa leku" onChange={this.handleNameChange} value={this.state.name} />
+                                    </td>
+                                    <td>
+                                        <input type="number" placeholder="Dawka(dzienna)" onChange={this.handleDoseChange} value={this.state.dose} />
+                                    </td>
+                                    <td>
+                                        <input type="date" placeholder="Od" onChange={this.handleFromChange} value={this.state.from} />
+                                    </td>
+                                    <td>
+                                        <input type="date" placeholder="Do" onChange={this.handleToChange} value={this.state.to} />
+                                    </td>
+                                </tr>
+                                {[...this.state.currentMedicine].reverse().map((medicine, key) => <Medicine warnings={this.state.warnings} key={key} obj={medicine} />)}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-                <form className="newMedicineForm" onSubmit={this.handleSubmit}>
-                    <SuggestionInput className="medicineName" completionUrl="/api/complete" placeholder="Nazwa leku" onChange={this.handleNameChange} />
-                    <input className="douse" type="number" placeholder="Dawka(dzienna)" onChange={this.handleDoseChange} />
-                    <input className="from " type="date" placeholder="Od" onChange={this.handleFromChange} />
-                    <input className="to" type="date" placeholder="Do" onChange={this.handleToChange} />
-                    <input id="addMedicineSubmit" type="submit" placeholder="+" />
-                </form>
                 <div className="someMedicine">
-                    {this.state.currentMedicine.map((medicine, key) => {
-                        return <Medicine key={key} obj={medicine} />
-                    })}
                 </div>
 
-
-
-                <br />
-                <label className="medicineLabel">Leki zażywane dawniej</label>
-
-                <div className="listHeader">
-                    <div className="medicineName">Lek</div>
-                    <div className="douse">Dawka(dzienna)</div>
-                    <div className="from">Od</div>
-                    <div className="to">Do</div>
+                <h2>Leki zażywane dawniej</h2>
+                <div className="wrap1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Lek</td>
+                                <td>Dawka</td>
+                                <td>Od</td>
+                                <td>Do</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {[...this.state.pastMedicine].reverse().map((medicine, key) => <Medicine key={key} obj={medicine} />)}
+                        </tbody>
+                    </table>
                 </div>
-                <div className="someMedicine">
-                    {this.state.pastMedicine.map((medicine, key) => {
-                        return <Medicine key={key} obj={medicine} />
-                    })}
-                </div>
+
 
             </div>
         )

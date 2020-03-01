@@ -7,3 +7,9 @@ h1 {
 .routeContainer > div {
     margin: 5px auto;
 }
+
+h2 {
+    color: rgb(111, 111, 111);
+    text-align: center;
+    margin-top: 0;
+}
