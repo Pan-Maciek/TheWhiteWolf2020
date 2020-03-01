@@ -28,6 +28,12 @@ function runReminders(database) {
                     webPush.sendNotification(subscription, payload).catch(err => console.error(err));
                 });
             }
+            //the code below DOES NOT WORK
+            else if (tracker.takenAt[tracker.takenAt.length] - Date.now() > 5400000) {
+                updatedTaken = tracker.takenAt;
+                updatedTaken.push(-1);
+                patientDb.update(tracker, { $set: { takenAt: updatedTaken }}, {multi: true}, function(err, numReplaced) {});
+            }
         }
     });
 }
@@ -56,8 +62,8 @@ app.post('/subscribe', async (req, res) => {
 
     //save subscription to database
     await subscriptionDb.findOne({ uid }, (err, doc) => {
-        if (!doc) subscriptionDb.insert({ uid, subscription })
-    })
+        if (!doc) subscriptionDb.insert({ uid, subscription });
+    });
 
     //create payload
     const payload = JSON.stringify({ title: 'Przypomnienie', message: 'Takie powiadomienia będą przypominać ci o zażyciu leków' });
