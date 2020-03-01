@@ -1,7 +1,7 @@
 const express = require('express');
 const webPush = require('web-push');
 const bodyParser = require('body-parser');
-const Datastore = require('nedb')
+const Datastore = require('nedb');
 const cron = require('node-cron');
 
 const app = express();
@@ -28,14 +28,11 @@ function runReminders(database) {
                     webPush.sendNotification(subscription, payload).catch(err => console.error(err));
                 });
             }
-            //the code below DOES NOT WORK
-            /*
-            else if (tracker.takenAt[tracker.takenAt.length] - Date.now() > 5400000) {
+            else if (tracker.takenAt[tracker.takenAt.length].date - Date.now() > 5400000) {
                 updatedTaken = tracker.takenAt;
-                updatedTaken.push(-1);
+                updatedTaken.push({date: Date.now(), taken: false});
                 patientDb.update(tracker, { $set: { takenAt: updatedTaken }}, {multi: true}, function(err, numReplaced) {});
             }
-            */
         }
     });
 }
@@ -86,7 +83,10 @@ cron.schedule('30 * * * *', () => {
 
 //get ID of patient by PESEL
 app.post('/api/get_uid', (req, res) => {
-    patientDb.find({ pesel: req.body.id }, (err, docs) => res.send(docs[0]._id));
+    patientDb.find({ pesel: req.body.id }, (err, docs) => {
+        if (docs[0]) res.send(docs[0]._id);
+        else res.send('');
+    });
 });
 
 //get all patient info by ID
@@ -135,8 +135,8 @@ app.get('/api/meds_on/:patientId/:date', (req, res) => {
     const medicineTaken = [];
     medTrackerDb.find({ patientId: req.params.patientId }, (err, docs) => {
         for (let tracker of docs) {
-            for (let date of tracker.takenAt) {
-                if (date % 86400000 == req.params.date % 86400000) {
+            for (let takeTerm of tracker.takenAt) {
+                if (takeTerm.date % 86400000 == req.params.date % 86400000) {
                     medicineTaken.push(tracker.medicine);
                     break;
                 }
@@ -178,7 +178,7 @@ app.post('/api/add_tracker', (req, res) => {
 app.post('/api/med_taken/:id/:med', (req, res) => {
     medTrackerDb.findOne({ patientID: req.params.id, medicine: req.params.med }, (error, doc) => {
         updatedTaken = doc.takenAt;
-        updatedTaken.push(Date.now());
+        updatedTaken.push({date: Date.now(), taken: true});
         medTrackerDb.update({ patientID: req.params.id, medicine: req.params.med }, { $set: { takenAt: updatedTaken }}, {multi: true}, function(err, numReplaced) {});
     });
     res.send({ status: 'ok, added taking of medicine' })
