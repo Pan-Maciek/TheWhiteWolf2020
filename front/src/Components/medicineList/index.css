@@ -1,10 +1,14 @@
 .medicineListDiv {
     font-size:18px;
 }
-.someMedicine > div:last-child > div:last-child {
+.someMedicine {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.someMedicine > div:first-child > div:last-child {
     border-radius:0 0 10px 0;
 }
-.someMedicine > div:last-child > div:first-child {
+.someMedicine > div:first-child > div:first-child {
     border-radius:0 0 0 10px;
 }
 
@@ -54,5 +58,5 @@
 }
 
 #addMedicineSubmit {
-    display: none;
+    display: block;
 }

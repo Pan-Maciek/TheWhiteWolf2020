@@ -30,18 +30,17 @@ export default class MedicineList extends Component {
     handleSubmit(event) {
         event.preventDefault();
         const id = localStorage.getItem("uid");
-        const newMedicine = {
+        const data = {
             "name": this.state.name,
             "dose": this.state.dose,
             "from": this.getUnixTime(this.state.from),
             "to": this.getUnixTime(this.state.to)
-        };
-
-        axios.post(`/api/prescribe/${localStorage.getItem("uid")}`, { newMedicine })
-            .then(res => {
-            })
-
+        }
+        axios.post(`/api/prescribe/${localStorage.getItem("uid")}`, data);
+        console.log(this.state)
+        this.setState({currentMedicine:[ ...this.state.currentMedicine, data]})
     }
+
 
     parseMedicine(res) {
         let resultCurrent = [];
@@ -56,6 +55,7 @@ export default class MedicineList extends Component {
     }
 
     getUnixTime(strDate) {
+
         var datum = Date.parse(strDate);
         return datum / 1000;
     }
@@ -84,6 +84,18 @@ export default class MedicineList extends Component {
         if (this.state.name && this.state.dose && this.state.from && this.state.to) {
             document.getElementById("addMedicineSubmit").style.display = "block";
         }
+    }
+
+    parseMedicine(res) {
+        let resultCurrent = [];
+        let resultPast = [];
+        res.forEach((ele) => {
+            if(ele.to < this.getUnixTime(Date.now()))
+                resultPast.push({name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString()});
+            else
+                resultCurrent.push({name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString()});
+        });
+        return {"current": resultCurrent, "past": resultPast};
     }
 
     getData() {

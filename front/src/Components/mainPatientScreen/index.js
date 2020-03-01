@@ -1,9 +1,32 @@
 import React from 'react'
 import './index.css'
+import axios from "axios";
 
 export default class MainPatientScreen extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: null,
+            surname: null,
+            age: null,
+            birthDate: null,
+            pesel: null
+        };
+    }
+
+    getData() {
+        axios.get(`/api/get_all/${localStorage.getItem("uid")}`)
+            .then(res => {
+                this.setState({name: res.data[0].name, surname: res.data[0].surname, age: this.ageFromPESEL(res.data[0].pesel), birthDate: this.DOBfromPESEL(res.data[0].pesel), pesel: res.data[0].pesel});
+            });
+    }
+
+
+    componentWillMount() {
+        this.getData();
+    }
     render() {
-        const { name, surname, PESEL } = this.props.patient
         return (
             <div style={{    marginTop: "30px", marginRight: '88px'}}>
                 <div className="patientTableContainer">
@@ -11,23 +34,23 @@ export default class MainPatientScreen extends React.Component {
                         <tbody>
                             <tr>
                                 <td>Imię</td>
-                                <td>{name}</td>
+                                <td>{this.state.name}</td>
                             </tr>
                             <tr>
                                 <td>Nazwisko</td>
-                                <td>{surname}</td>
+                                <td>{this.state.surname}</td>
                             </tr>
                             <tr>
                                 <td>Wiek</td>
-                                <td>{this.ageFromPESEL(PESEL)}</td>
+                                <td>{this.state.age}</td>
                             </tr>
                             <tr>
                                 <td>Data urodzenia</td>
-                                <td>{this.DOBfromPESEL(PESEL)}</td>
+                                <td>{this.state.birthDate}</td>
                             </tr>
                             <tr>
                                 <td>PESEL</td>
-                                <td>{PESEL}</td>
+                                <td>{this.state.pesel}</td>
                             </tr>
                         </tbody>
                     </table>

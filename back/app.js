@@ -173,14 +173,15 @@ app.post('/api/coliding', async (req, res) => {
     console.log(data)
     res.send(data)
 })
+
 //prescribe medicine to patient
 app.post('/api/prescribe/:id', (req, res) => {
     let updatedMedicines = [];
     patientDb.findOne({_id: req.params.id}, (err, doc) => {
         updatedMedicines = doc.medicine;
+        updatedMedicines.push(req.body);
+        patientDb.update({ _id: req.params.id }, { $set: { medicine: updatedMedicines }}, {multi: true}, function(err, numReplaced) {});
     });
-    updatedMedicines.push(req.body);
-    patientDb.update({ _id: req.params.id }, { $set: { medicine: updatedMedicines } });
     res.send({ status: 'ok, medicine prescribed to patient' });
 });
 
