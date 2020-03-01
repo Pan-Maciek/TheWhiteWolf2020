@@ -22,10 +22,12 @@ function App() {
                 <MainPatientScreen patient={ { name: 'Mati', surname: 'Obrzut', PESEL: '80110185932' }} />
               </Route>
               <Route path="/leki">
+
                 <MedicineList/>
               </Route>
               <Route path="/badania">
                 <ExaminationHistory/>
+
               </Route>
               <Route path="/">
                 <h1>

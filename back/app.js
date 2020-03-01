@@ -117,7 +117,7 @@ app.get('/api/get_history/:patientId/:medicine', (req, res) => {
 
 //get all medicines taken on a given day
 app.get('/api/meds_on/:patientId/:date', (req, res) => {
-    medicineTaken = [];
+    const medicineTaken = [];
     medTrackerDb.find({ patientId: req.params.patientId }, (err, docs) => {
         for (let tracker of docs) {
             for (let date of tracker.takenAt) {
@@ -176,8 +176,8 @@ app.post('/api/coliding', async (req, res) => {
 })
 //prescribe medicine to patient
 app.post('/api/prescribe/:id', (req, res) => {
-    updatedMedicines;
-    patientDb.findOne({ _id: req.params.id }, (err, doc) => {
+    let updatedMedicines = [];
+    patientDb.findOne({_id: req.params.id}, (err, doc) => {
         updatedMedicines = doc.medicine;
     });
     updatedMedicines.push(req.body);
