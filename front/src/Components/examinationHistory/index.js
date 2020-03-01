@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './index.css';
-import Medicine from "../medicineList";
 import Examination from "../examination";
 
 export default class ExaminationHistory extends Component {

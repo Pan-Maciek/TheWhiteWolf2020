@@ -1,4 +1,4 @@
-{"name":"Guido","surname":"Rimez","birthday":"2004-09-16","pesel":"321","medicine":[{"name":"med1","dose":"50mg"}],"checkups":[],"_id":"WfWuPDi3ss8QUdVq"}
-{"name":"Mario","surname":"Brada","birthday":"1970-01-28","pesel":"123","medicine":[],"checkups":[],"_id":"nTpTCvGPQ120HtS0"}
-{"name":"Ricardo","surname":"Colucci","birthday":"1986-08-07","pesel":"789","medicine":[],"checkups":[],"_id":"qIO7wCJxJEYyjRUc"}
-{"name":"Lucio","surname":"Estos","birthday":"1985-05-01","pesel":"456","medicine":[],"checkups":[],"_id":"uK7eP72kUx2zJT4a"}
+{"name":"Guido","surname":"Rimez","birthday":"2004-09-16","pesel":"321","medicine":[{"name":"Lek","dose":"4","from":1585612800,"to":1586908800}],"_id":"WfWuPDi3ss8QUdVq"}
+{"name":"Mario","surname":"Brada","birthday":"1970-01-28","pesel":"123","medicine":[],"_id":"nTpTCvGPQ120HtS0"}
+{"name":"Ricardo","surname":"Colucci","birthday":"1986-08-07","pesel":"789","medicine":[],"_id":"qIO7wCJxJEYyjRUc"}
+{"name":"Lucio","surname":"Estos","birthday":"1985-05-01","pesel":"456","medicine":[],"_id":"uK7eP72kUx2zJT4a"}

@@ -116,7 +116,7 @@ app.get('/api/get_history/:patientId/:medicine', (req, res) => {
 
 //get all medicines taken on a given day
 app.get('/api/meds_on/:patientId/:date', (req, res) => {
-    medicineTaken = [];
+    const medicineTaken = [];
     medTrackerDb.find({ patientId: req.params.patientId }, (err, docs) => {
         for (let tracker of docs) {
             for (let date of tracker.takenAt) {
@@ -158,10 +158,25 @@ app.post('/api/add_tracker', (req, res) => {
     res.send({ status: 'ok, added new tracker' });
 });
 
+
+const fs = require('fs')
+const data = JSON.parse(fs.readFileSync('./data.json'))
+
+app.get('/api/complete/:name', (req, res) => {
+    const name = req.params.name
+    res.send(data.filter(x => x.name.toLowerCase().startsWith(name)).slice(0, 5))
+})
+
+const { findColiding } = require('./webscrap.js')
+app.post('/api/coliding', async (req, res) => {
+    const data = await findColiding(req.body.drugs)
+    console.log(data)
+    res.send(data)
+})
 //prescribe medicine to patient
 app.post('/api/prescribe/:id', (req, res) => {
-    updatedMedicines;
-    patientDb.findOne({ _id: req.params.id }, (err, doc) => {
+    let updatedMedicines = [];
+    patientDb.findOne({_id: req.params.id}, (err, doc) => {
         updatedMedicines = doc.medicine;
     });
     updatedMedicines.push(req.body);

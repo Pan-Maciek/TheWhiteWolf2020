@@ -1,0 +1,51 @@
+.dayPanel{
+    background: #FFD23D;    
+    padding: 20px;
+}
+
+
+.MojeLeki{
+    align-self: start;
+    background-color: aquamarine;
+    border: 0cm;
+    border-radius: 10px;    
+}
+table{
+    border-radius: 10px;
+    background: white;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+td{
+    padding: 50px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+th{ 
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+    color: aliceblue;
+}
+th:nth-child(2){
+    background: #FFD23D
+}
+td:nth-child(2){
+    background-color: #FFE48A;
+}
+
+th:nth-child(3){
+    background: #3F82FF
+}
+td:nth-child(3){
+    background: #8CB4FF
+}
+
+th:nth-child(1){
+    background-color:#FF8C00;
+}
+td:nth-child(1){
+    background-color:#FFA500;
+}
+
+

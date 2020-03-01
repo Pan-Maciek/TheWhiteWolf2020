@@ -6,6 +6,7 @@ import MainPatientScreen from './components/mainPatientScreen'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ExaminationHistory from "./components/examinationHistory";
 import MedicineList from "./components/medicineList";
+import PersonalPatientScreen from './components/PersonalPatientPanel';
 
 function App() {
 
@@ -21,10 +22,12 @@ function App() {
                 <MainPatientScreen patient={ { name: 'Mati', surname: 'Obrzut', PESEL: '80110185932' }} />
               </Route>
               <Route path="/leki">
+
                 <MedicineList/>
               </Route>
               <Route path="/badania">
                 <ExaminationHistory/>
+
               </Route>
               <Route path="/">
                 <h1>
