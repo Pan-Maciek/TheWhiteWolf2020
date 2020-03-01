@@ -3,7 +3,6 @@ const webPush = require('web-push');
 const bodyParser = require('body-parser');
 const Datastore = require('nedb')
 const cron = require('node-cron');
-const dateFns = require('date-fns');
 
 const app = express();
 const port = 5000;
@@ -17,13 +16,13 @@ const subscriptionDb = new Datastore({ filename: './subscriptionDb.json', autolo
 function runReminders(database) {
     database.find({}, (err, docs) => {
         for (let tracker of docs) {
-            if (tracker.takenAt[tracker.takenAt.length] + tracker.interval < dateFns.getTime() - 1800000
-                && tracker.endsAt > dateFns.getTime()) {
+            if (tracker.takenAt[tracker.takenAt.length] + tracker.interval > Date.now() - 1800000
+                && tracker.endsAt > Date.now()) {
                 subscriptionDb.findOne({ uid: tracker.patientID }, (_, doc) => {
                     const { subscription } = doc
 
                     //create payload
-                    const payload = JSON.stringify({ title: 'Przypomnienie', message: 'Przypomnienie: powinieneś teraz wziąć leki!!' });
+                    const payload = JSON.stringify({ title: 'Przypomnienie', message: 'Powinieneś teraz wziąć leki!' });
 
                     //pass object into sendNotification
                     webPush.sendNotification(subscription, payload).catch(err => console.error(err));
