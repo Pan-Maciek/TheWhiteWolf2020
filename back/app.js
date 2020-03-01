@@ -1,13 +1,38 @@
 const express = require('express');
 const webPush = require('web-push');
-const path = require('path');
 const bodyParser = require('body-parser');
 const Datastore = require('nedb')
 const cron = require('node-cron');
-const { runReminders } = require('./extras');
+const dateFns = require('date-fns');
 
 const app = express();
 const port = 5000;
+
+//db setup
+const patientDb = new Datastore({ filename: './patientDb.json', autoload: true });
+const medTrackerDb = new Datastore({ filename: './medTrackerDb.json', autoload: true });
+const subscriptionDb = new Datastore({ filename: './subscriptionDb.json', autoload: true });
+
+//the reminder function
+function runReminders(database) {
+    database.find({}, (err, docs) => {
+        for (let tracker of docs) {
+            if (tracker.takenAt[tracker.takenAt.length] + tracker.interval < dateFns.getTime() - 1800000
+                && tracker.endsAt > dateFns.getTime()) {
+                subscriptionDb.findOne({ uid: tracker.patientID }, (_, doc) => {
+                    const { subscription } = doc
+
+                    //create payload
+                    const payload = JSON.stringify({ title: 'Przypomnienie', message: 'Przypomnienie: powinieneś teraz wziąć leki!!' });
+
+                    //pass object into sendNotification
+                    webPush.sendNotification(subscription, payload).catch(err => console.error(err));
+                })
+                //TODO - send push notification reminders
+            }
+        }
+    });
+}
 
 //set static path
 app.use(express.static('../front/src'));
@@ -18,30 +43,31 @@ app.use(bodyParser.json());
 
 //push notifications
 const publicVapidKey =
-'BHF3G5cqLOzPnFaOCekYqUu7EUy9o0XyUSiQKhUyvfjv3T1M_x-0xMJgHFnbhEIOfZ3ysZpQQZOhSJee_9NdzIo';
+    'BHF3G5cqLOzPnFaOCekYqUu7EUy9o0XyUSiQKhUyvfjv3T1M_x-0xMJgHFnbhEIOfZ3ysZpQQZOhSJee_9NdzIo';
 const privateVapidKey =
-'nXdTf3itrlaKXq6toaVZMQEor52rOB6RYHDBMsFPhDg';
+    'nXdTf3itrlaKXq6toaVZMQEor52rOB6RYHDBMsFPhDg';
 
 webPush.setVapidDetails('mailto:test@test.com', publicVapidKey, privateVapidKey);
 
-app.post('/subscribe', (req, res) => {
+app.post('/subscribe', async (req, res) => {
     //get pushsubscription object
-    const subscription = req.body;
+    const { subscription, uid } = req.body;
 
     //send 201 - resource created
     res.status(201).json({});
 
+    //save subscription to database
+    await subscriptionDb.findOne({ uid }, (err, doc) => {
+        if (!doc) subscriptionDb.insert({ uid, subscription })
+    })
+
     //create payload
-    const payload = JSON.stringify({ title: 'Push Test' });
+    const payload = JSON.stringify({ title: 'Przypomnienie', message: 'Takie powiadomienia będą przypominać ci o zażyciu leków' });
 
     //pass object into sendNotification
     webPush.sendNotification(subscription, payload).catch(err => console.error(err));
 
 });
-
-//db setup
-const patientDb = new Datastore({filename: './patientDb.json', autoload: true});
-const medTrackerDb = new Datastore({filename: './medTrackerDb.json', autoload: true});
 
 //cron setup to run reminder check every 30 minutes
 cron.schedule('30 * * * *', () => {
@@ -137,12 +163,12 @@ app.post('/api/add_tracker', (req, res) => {
 //prescribe medicine to patient
 app.post('/api/prescribe/:id', (req, res) => {
     updatedMedicines;
-    patientDb.findOne({_id: req.params.id}, (err, doc) => {
+    patientDb.findOne({ _id: req.params.id }, (err, doc) => {
         updatedMedicines = doc.medicine;
     });
     updatedMedicines.push(req.body);
-    patientDb.update({_id: req.params.id}, { $set: {medicine: updatedMedicines} });
-    res.send({status: 'ok, medicine prescribed to patient'});
+    patientDb.update({ _id: req.params.id }, { $set: { medicine: updatedMedicines } });
+    res.send({ status: 'ok, medicine prescribed to patient' });
 });
 
 //add checkup to patient
@@ -151,8 +177,8 @@ app.post('/api/checkups/:patientId', (req, res) => {
     patientDb.findOne({ _id: req.params.patientId }, (err, doc) => {
         updatedCheckups = doc.checkups;
         updatedCheckups.push(req.body);
-        patientDb.update({_id: req.params.patientId}, { $set: {checkups: updatedCheckups} });
-        res.send({status: 'ok, checkup added to patients record'});
+        patientDb.update({ _id: req.params.patientId }, { $set: { checkups: updatedCheckups } });
+        res.send({ status: 'ok, checkup added to patients record' });
     });
 });
 
