@@ -166,6 +166,16 @@ app.post('/api/add_tracker', (req, res) => {
     res.send({ status: 'ok, added new tracker' });
 });
 
+//update last time taken
+app.post('/api/med_taken/:id/:med', (req, res) => {
+    medTrackerDb.findOne({ patientID: req.params.id, medicine: req.params.med }, (error, doc) => {
+        updatedTaken = doc.takenAt;
+        updatedTaken.push(Date.now());
+        medTrackerDb.update({ patientID: req.params.id, medicine: req.params.med }, { $set: { takenAt: updatedTaken }}, {multi: true}, function(err, numReplaced) {});
+    });
+    res.send({ status: 'ok, added taking of medicine' })
+});
+
 
 const fs = require('fs')
 const data = JSON.parse(fs.readFileSync('./data.json'))
