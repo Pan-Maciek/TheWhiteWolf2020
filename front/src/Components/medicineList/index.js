@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './index.css';
 import Medicine from '../medicine';
 import axios from 'axios'
 
+import SuggestionInput from '../suggestionInput'
 
 export default class MedicineList extends Component {
 
@@ -33,9 +34,10 @@ export default class MedicineList extends Component {
             "name": this.state.name,
             "dose": this.state.dose,
             "from": this.getUnixTime(this.state.from),
-            "to": this.getUnixTime(this.state.to)};
+            "to": this.getUnixTime(this.state.to)
+        };
 
-        axios.post(`/api/prescribe/${localStorage.getItem("uid")}`, {newMedicine})
+        axios.post(`/api/prescribe/${localStorage.getItem("uid")}`, { newMedicine })
             .then(res => {
             })
 
@@ -45,41 +47,41 @@ export default class MedicineList extends Component {
         let resultCurrent = [];
         let resultPast = [];
         res.forEach((ele) => {
-            if(ele.to < this.getUnixTime(Date.now()))
-                resultPast.push({name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString()});
+            if (ele.to < this.getUnixTime(Date.now()))
+                resultPast.push({ name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString() });
             else
-                resultCurrent.push({name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString()});
+                resultCurrent.push({ name: ele.name, dose: ele.dose, from: new Date(ele.from * 1000).toLocaleDateString(), to: new Date(ele.to * 1000).toLocaleDateString() });
         });
-        return {"current": resultCurrent, "past": resultPast};
+        return { "current": resultCurrent, "past": resultPast };
     }
 
-    getUnixTime(strDate){
+    getUnixTime(strDate) {
         var datum = Date.parse(strDate);
-        return datum/1000;
+        return datum / 1000;
     }
 
     handleNameChange = (event) => {
         event.preventDefault();
-        this.setState({name: event.target.value});
+        this.setState({ name: event.target.value });
         this.checkForFormFilledIn();
     };
     handleDoseChange = (event) => {
         event.preventDefault();
-        this.setState({dose: event.target.value});
+        this.setState({ dose: event.target.value });
         this.checkForFormFilledIn();
     };
     handleFromChange = (event) => {
         event.preventDefault();
-        this.setState({from: event.target.value});
+        this.setState({ from: event.target.value });
         this.checkForFormFilledIn();
     };
     handleToChange = (event) => {
         event.preventDefault();
-        this.setState({to: event.target.value});
+        this.setState({ to: event.target.value });
         this.checkForFormFilledIn();
     };
     checkForFormFilledIn() {
-        if(this.state.name != null && this.state.dose != null && this.state.from != null && this.state.to != null) {
+        if (this.state.name && this.state.dose && this.state.from && this.state.to) {
             document.getElementById("addMedicineSubmit").style.display = "block";
         }
     }
@@ -87,7 +89,7 @@ export default class MedicineList extends Component {
     getData() {
         axios.get(`/api/get_medicine/${localStorage.getItem("uid")}`)
             .then(res => {
-                this.setState({currentMedicine: this.parseMedicine(res.data).current, pastMedicine: this.parseMedicine(res.data).past});
+                this.setState({ currentMedicine: this.parseMedicine(res.data).current, pastMedicine: this.parseMedicine(res.data).past });
             });
     }
 
@@ -95,7 +97,7 @@ export default class MedicineList extends Component {
         this.getData();
     }
 
-    render(){
+    render() {
 
         return (
             <div className="medicineListDiv">
@@ -109,21 +111,21 @@ export default class MedicineList extends Component {
                 </div>
 
                 <form className="newMedicineForm" onSubmit={this.handleSubmit}>
-                    <input className="medicineName" placeholder="Nazwa leku" onChange={this.handleNameChange}/>
-                    <input className="douse" type="number" placeholder="Dawka(dzienna)" onChange={this.handleDoseChange}/>
-                    <input className="from " type="date" placeholder="Od" onChange={this.handleFromChange}/>
-                    <input className="to" type="date" placeholder="Do" onChange={this.handleToChange}/>
-                    <input id="addMedicineSubmit" type="submit" placeholder="+"/>
+                    <SuggestionInput className="medicineName" completionUrl="/api/complete" placeholder="Nazwa leku" onChange={this.handleNameChange} />
+                    <input className="douse" type="number" placeholder="Dawka(dzienna)" onChange={this.handleDoseChange} />
+                    <input className="from " type="date" placeholder="Od" onChange={this.handleFromChange} />
+                    <input className="to" type="date" placeholder="Do" onChange={this.handleToChange} />
+                    <input id="addMedicineSubmit" type="submit" placeholder="+" />
                 </form>
                 <div className="someMedicine">
                     {this.state.currentMedicine.map((medicine, key) => {
-                        return <Medicine key={key} obj = {medicine}/>
+                        return <Medicine key={key} obj={medicine} />
                     })}
                 </div>
 
 
 
-                <br/>
+                <br />
                 <label className="medicineLabel">Leki zażywane dawniej</label>
 
                 <div className="listHeader">
@@ -134,7 +136,7 @@ export default class MedicineList extends Component {
                 </div>
                 <div className="someMedicine">
                     {this.state.pastMedicine.map((medicine, key) => {
-                        return <Medicine key={key} obj = {medicine}/>
+                        return <Medicine key={key} obj={medicine} />
                     })}
                 </div>
 

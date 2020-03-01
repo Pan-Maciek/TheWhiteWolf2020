@@ -1,0 +1,17 @@
+ul.si {
+    position: absolute;
+    background-color: #f1f1f1;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+ul.si li {
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+ul.si li:hover {
+    background-color: #ccc;
+}
