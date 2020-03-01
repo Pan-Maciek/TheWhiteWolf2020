@@ -8,6 +8,10 @@ class Sidebar extends Component {
         const path = location.pathname
         return (
             <div className="sidebarWrapper">
+                <div className={`sidebarIcon ${/home/.test(path) ? 'active' : ''}`} onClick={this.navigate('home')}>
+                    <i className="fas fa-2x fa-home"></i> <br />
+                    Leki
+                </div>
                 <div className={`sidebarIcon ${/leki/.test(path) ? 'active' : ''}`} onClick={this.navigate('leki')}>
                     <i className="fas fa-2x fa-pills"></i> <br />
                     Leki

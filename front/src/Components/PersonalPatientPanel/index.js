@@ -4,12 +4,11 @@ import moment from 'moment'
 
 export default class PersonalPatientScreen extends React.Component {
     render() {
-        const { drugs } = this.props.drugs
+        const { drugs } = this.props.drugs || []
         let date = new Date()
         return (
             <>
                 <div className="MojeLeki">
-                    <h2>Moje leki na dziś: {moment().format('Do MMMM YYYY')}</h2>
                     <table className="DzienLekow">
                         <tr>
                             <th>Rano</th>
@@ -17,65 +16,88 @@ export default class PersonalPatientScreen extends React.Component {
                             <th>Wieczór</th>
                         </tr>
                         <tr>
-                            <td>Lek 1</td>
-                            <td>Lek 1</td>
-                            <td>Lek 1</td>
+                            <td>
+                                <ul>
+                                    <li>Paracetamol</li>
+                                    <li>Paracetamol</li>
+                                    <li>Paracetamol</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Ibuprofen</li>
+                                    <li>Ibuprofen</li>
+                                    <li>Ibuprofen</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Ibuprofen</li>
+                                    <li>Ibuprofen</li>
+                                    <li>Ibuprofen</li>
+                                </ul>
+
+                            </td>
                         </tr>
                     </table>
 
-                </div>
-                <div>
-                <h2>Historia leków</h2>
-                    <div style={{ display: "flex" }}>
-                        <div className="dayPanel">
-                        dayOfWeekName({new Date().getDay}-6)
-                            
-                </div>
-                        <div className="dayPanel">
-                        dayOfWeekName({new Date().getDay}-5)
-                </div>
-                        <div className="dayPanel">
-                        dayOfWeekName({new Date().getDay}-4)
-                </div>
-                        <div className="dayPanel">
-                        dayOfWeekName({new Date().getDay}-3)
-                </div>
-                        <div className="dayPanel">
-                        dayOfWeekName({new Date().getDay}-2)
-                </div>
-                        <div className="dayPanel">
-                        dayOfWeekName({new Date().getDay}-1)
-                </div>
-                        <div className="dayPanel">
-                        dayOfWeekName({new Date().getDay})
-                </div>
+
+                        <div className="foo1">
+                            <div className="foo2">
+                                <p>Pon</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div className="foo2">
+                                <p>Wt</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div className="foo2">
+                                <p>Śr</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div className="foo2">
+                                <p>Czw</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div className="foo2">
+                                <p>Pt</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div className="foo2">
+                                <p>Sob</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div className="foo2">
+                                <p>Nd</p>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
                     </div>
-                </div>
             </>
         )
     }
-    
-    dayOfWeekName(date){
-        switch(date){
+
+    dayOfWeekName(date) {
+        switch (date) {
             case 0:
-                return "Poniedziałek";
+                return "Pon";
             case 1:
-                return "Wtorek";
+                return "Wt";
             case 2:
-                return "Środa";
+                return "Śr";
             case 3:
-                return "Czwartek";
+                return "Czw";
             case 4:
-                return "Piątek";
+                return "Pt";
             case 5:
-                return "Sobota";
+                return "Sob";
             case 6:
-                return "Niedziela";
+                return "Nd";
         }
     }
-    
-    dayMedicineIntake(day){
-        
+
+    dayMedicineIntake(day) {
+
     }
 
 

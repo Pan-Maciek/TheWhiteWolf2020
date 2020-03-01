@@ -3,23 +3,22 @@
     padding: 20px;
 }
 
-
-.MojeLeki{
-    align-self: start;
-    background-color: aquamarine;
-    border: 0cm;
-    border-radius: 10px;    
+.MojeLeki {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .MojeLeki table{
     border-radius: 10px;
-    background: white;
     border-collapse: separate;
     border-spacing: 4px;
 }
 
 .MojeLeki td{
-    padding: 50px;
     border-radius: 0px 0px 10px 10px;
+    width: 33%;
 }
 
 .MojeLeki th{ 
@@ -47,3 +46,40 @@
 }
 
 
+.MojeLeki ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.MojeLeki li {
+    padding: 15px;
+    border-bottom: solid 1px #6363634a;
+}
+.MojeLeki li:last-child {
+    border: none;
+}
+
+.foo1 {
+    display: flex;
+    width: 50%;;
+    border: solid 1px #a5851b;
+    margin: 15px;
+    border-radius: 6px;
+    background-color: #ffe48a;
+}
+
+.foo2 {
+    padding: 5px;
+    width: 15%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    text-align: center;
+    border-left: solid 1px #a5851b;
+}
+.foo2:first-child {
+    border: none;
+}
+.foo2 p {
+    margin: 2px;
+}
