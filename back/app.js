@@ -27,8 +27,7 @@ function runReminders(database) {
 
                     //pass object into sendNotification
                     webPush.sendNotification(subscription, payload).catch(err => console.error(err));
-                })
-                //TODO - send push notification reminders
+                });
             }
         }
     });

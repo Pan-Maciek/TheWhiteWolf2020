@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Topbar from './components/topbar';
 import Sidebar from './components/sidebar';
 import MainPatientScreen from './components/mainPatientScreen'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
