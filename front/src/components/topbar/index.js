@@ -29,7 +29,7 @@ class Topbar extends Component {
         }).then(res => res.data)
         localStorage.setItem('uid', uid)
         localStorage.setItem('user', JSON.stringify(user))
-        this.props.history.push(`/user/${uid}`)
+        this.props.history.push(`/pacjent`)
     }
 }
 export default withRouter(Topbar)

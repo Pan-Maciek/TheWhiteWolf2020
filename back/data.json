@@ -1,6 +1,6 @@
 [
     {
-        "name": "Acard®",
+        "name": "Acard",
         "substance": "Acetylsalicylic acid"
     },
     {
@@ -8,19 +8,19 @@
         "substance": "Acenocoumarol"
     },
     {
-        "name": "Acidolac® Baby",
+        "name": "Acidolac Baby",
         "substance": "Bifidobacterium BB-12"
     },
     {
-        "name": "Acidolac® Junior",
+        "name": "Acidolac Junior",
         "substance": "Bifidobacterium lactis"
     },
     {
-        "name": "Acidolac® LGG",
+        "name": "Acidolac LGG",
         "substance": "Lactobacillus rhamnosus GG"
     },
     {
-        "name": "Acidolit®",
+        "name": "Acidolit",
         "substance": "Glucose"
     },
     {
@@ -32,27 +32,27 @@
         "substance": "Epinephrine"
     },
     {
-        "name": "Allertec®",
+        "name": "Allertec",
         "substance": "Cetirizine dihydrochloride"
     },
     {
-        "name": "Allertec® Ukąszenia",
+        "name": "Allertec Ukąszenia",
         "substance": "Antazoline sulphate + Naphazoline nitrate"
     },
     {
-        "name": "Allertec® Wapno Plus",
+        "name": "Allertec Wapno Plus",
         "substance": "Calcium"
     },
     {
-        "name": "Allertec® WZF",
+        "name": "Allertec WZF",
         "substance": "Cetirizine dihydrochloride"
     },
     {
-        "name": "Amizepin®",
+        "name": "Amizepin",
         "substance": "Carbamazepine"
     },
     {
-        "name": "Anticol®",
+        "name": "Anticol",
         "substance": "Disulfiram"
     },
     {
@@ -68,7 +68,7 @@
         "substance": "Tianeptine sodium"
     },
     {
-        "name": "Atorvasterol®",
+        "name": "Atorvasterol",
         "substance": "Atorvastatin"
     },
     {
@@ -96,11 +96,11 @@
         "substance": "Barium sulphate"
     },
     {
-        "name": "Betadrin®",
+        "name": "Betadrin",
         "substance": "Diphenhydramine hydrochloride"
     },
     {
-        "name": "Betadrin® WZF",
+        "name": "Betadrin WZF",
         "substance": "Diphenhydramine hydrochloride"
     },
     {
@@ -112,55 +112,55 @@
         "substance": "Bimatoprost"
     },
     {
-        "name": "Biodacyna®",
+        "name": "Biodacyna",
         "substance": "Amikacin"
     },
     {
-        "name": "Biodacyna® ophthalmicum 0,3%",
+        "name": "Biodacyna ophthalmicum 0,3%",
         "substance": "Amikacin"
     },
     {
-        "name": "Biodribin®",
+        "name": "Biodribin",
         "substance": "Cladribine"
     },
     {
-        "name": "Biofazolin®",
+        "name": "Biofazolin",
         "substance": "Cefazolin"
     },
     {
-        "name": "Biofuroksym®",
+        "name": "Biofuroksym",
         "substance": "Cefuroxime"
     },
     {
-        "name": "Bioracef®",
+        "name": "Bioracef",
         "substance": "Cefuroxime axetil"
     },
     {
-        "name": "Biotaksym®",
+        "name": "Biotaksym",
         "substance": "Cefotaxime"
     },
     {
-        "name": "Biotebal®",
+        "name": "Biotebal",
         "substance": "Biotin"
     },
     {
-        "name": "Biotrakson®",
+        "name": "Biotrakson",
         "substance": "Ceftriaxone"
     },
     {
-        "name": "Biotum®",
+        "name": "Biotum",
         "substance": "Ceftazidime"
     },
     {
-        "name": "Biseptol®",
+        "name": "Biseptol",
         "substance": "Co-trimoxazole"
     },
     {
-        "name": "Bobotic® Forte",
+        "name": "Bobotic Forte",
         "substance": "Simeticone"
     },
     {
-        "name": "Bobotic® twist-off",
+        "name": "Bobotic twist-off",
         "substance": "Simeticone"
     },
     {
@@ -168,7 +168,7 @@
         "substance": "Brimonidine tartate"
     },
     {
-        "name": "Bunondol®",
+        "name": "Bunondol",
         "substance": "Buprenorphine"
     },
     {
@@ -192,7 +192,7 @@
         "substance": "Ciprofloxacin"
     },
     {
-        "name": "Cipronex®",
+        "name": "Cipronex",
         "substance": "Ciprofloxacin"
     },
     {
@@ -208,7 +208,7 @@
         "substance": "Trimebutine"
     },
     {
-        "name": "Decaldol®",
+        "name": "Decaldol",
         "substance": "Haloperidol decanoate"
     },
     {
@@ -224,7 +224,7 @@
         "substance": "Escitalopram"
     },
     {
-        "name": "Devikap®",
+        "name": "Devikap",
         "substance": "Colecalciferol"
     },
     {
@@ -236,7 +236,7 @@
         "substance": "Fludrocortisone acetate"
     },
     {
-        "name": "Difadol® 0,1%",
+        "name": "Difadol 0,1%",
         "substance": "Diclofenac sodium"
     },
     {
@@ -252,7 +252,7 @@
         "substance": "Acetazolamide"
     },
     {
-        "name": "Dolcontral®",
+        "name": "Dolcontral",
         "substance": "Pethidine hydrochloride"
     },
     {
@@ -264,7 +264,7 @@
         "substance": "Dopamine"
     },
     {
-        "name": "Doxonex®",
+        "name": "Doxonex",
         "substance": "Doxazosin"
     },
     {
@@ -272,11 +272,11 @@
         "substance": "Mometasone furoate"
     },
     {
-        "name": "Enarenal®",
+        "name": "Enarenal",
         "substance": "Enalapril maleate"
     },
     {
-        "name": "Entero Acidolac®",
+        "name": "Entero Acidolac",
         "substance": "Saccharomyces boulardii"
     },
     {
@@ -292,23 +292,23 @@
         "substance": "Eplerenone"
     },
     {
-        "name": "Etopiryna®",
+        "name": "Etopiryna",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Exacyl®",
+        "name": "Exacyl",
         "substance": "Tranexamic acid"
     },
     {
-        "name": "Famogast®",
+        "name": "Famogast",
         "substance": "Famotidine"
     },
     {
-        "name": "Febrofen®",
+        "name": "Febrofen",
         "substance": "Ketoprofen"
     },
     {
-        "name": "Fenactil®",
+        "name": "Fenactil",
         "substance": "Chlorpromazine hydrochloride"
     },
     {
@@ -316,7 +316,7 @@
         "substance": "Fentanyl"
     },
     {
-        "name": "Flucofast®",
+        "name": "Flucofast",
         "substance": "Fluconazole"
     },
     {
@@ -368,7 +368,7 @@
         "substance": "Heparin sodium"
     },
     {
-        "name": "Heviran®",
+        "name": "Heviran",
         "substance": "Aciclovir"
     },
     {
@@ -380,23 +380,23 @@
         "substance": "Ibandronic acid"
     },
     {
-        "name": "Ibufen® Baby",
+        "name": "Ibufen Baby",
         "substance": "Ibuprofen"
     },
     {
-        "name": "Ibufen® dla Dzieci Forte",
+        "name": "Ibufen dla Dzieci Forte",
         "substance": "Ibuprofen"
     },
     {
-        "name": "Ibufen® dla dzieci o smaku malinowym",
+        "name": "Ibufen dla dzieci o smaku malinowym",
         "substance": "Ibuprofen"
     },
     {
-        "name": "Ibufen® dla dzieci o smaku truskawkowym",
+        "name": "Ibufen dla dzieci o smaku truskawkowym",
         "substance": "Ibuprofen"
     },
     {
-        "name": "Ibufen® Junior",
+        "name": "Ibufen Junior",
         "substance": "Ibuprofen"
     },
     {
@@ -404,11 +404,11 @@
         "substance": "Colecalciferol"
     },
     {
-        "name": "Indapen®",
+        "name": "Indapen",
         "substance": "Indapamide"
     },
     {
-        "name": "Indapen® SR",
+        "name": "Indapen SR",
         "substance": "Indapamide"
     },
     {
@@ -432,15 +432,15 @@
         "substance": "Ketotifen"
     },
     {
-        "name": "Klabion®",
+        "name": "Klabion",
         "substance": "Clarithromycin"
     },
     {
-        "name": "Klabion® UNO",
+        "name": "Klabion UNO",
         "substance": "Clarithromycin"
     },
     {
-        "name": "Lacrimal®",
+        "name": "Lacrimal",
         "substance": "Polyvinyl alcohol"
     },
     {
@@ -448,7 +448,7 @@
         "substance": "Loperamide hydrochloride"
     },
     {
-        "name": "Levonor®",
+        "name": "Levonor",
         "substance": "Norepinephrine"
     },
     {
@@ -464,7 +464,7 @@
         "substance": "Lidocaine hydrochloride"
     },
     {
-        "name": "Limetic®",
+        "name": "Limetic",
         "substance": "Desogestrel"
     },
     {
@@ -476,47 +476,47 @@
         "substance": "Lovastatin"
     },
     {
-        "name": "Majamil® PPH",
+        "name": "Majamil PPH",
         "substance": "Diclofenac sodium"
     },
     {
-        "name": "Majamil® prolongatum",
+        "name": "Majamil prolongatum",
         "substance": "Diclofenac sodium"
     },
     {
-        "name": "Maxigra®",
+        "name": "Maxigra",
         "substance": "Sildenafil"
     },
     {
-        "name": "Memotropil®",
+        "name": "Memotropil",
         "substance": "Piracetam"
     },
     {
-        "name": "Memotropil® 20%",
+        "name": "Memotropil 20%",
         "substance": "Piracetam"
     },
     {
-        "name": "Mesopral®",
+        "name": "Mesopral",
         "substance": "Esomeprazole"
     },
     {
-        "name": "Metafen®",
+        "name": "Metafen",
         "substance": "Ibuprofen"
     },
     {
-        "name": "Metafen® Zatoki",
+        "name": "Metafen Zatoki",
         "substance": "Ibuprofen"
     },
     {
-        "name": "Metafen® żel Forte",
+        "name": "Metafen żel Forte",
         "substance": "Ibuprofen lysine"
     },
     {
-        "name": "Metocard®",
+        "name": "Metocard",
         "substance": "Metoprolol"
     },
     {
-        "name": "Metocard® ZK",
+        "name": "Metocard ZK",
         "substance": "Metoprolol succinate"
     },
     {
@@ -536,7 +536,7 @@
         "substance": "Metronidazole"
     },
     {
-        "name": "Midanium®",
+        "name": "Midanium",
         "substance": "Midazolam"
     },
     {
@@ -560,7 +560,7 @@
         "substance": "Sodium bicarbonate"
     },
     {
-        "name": "Nedal®",
+        "name": "Nedal",
         "substance": "Nebivolol"
     },
     {
@@ -572,15 +572,15 @@
         "substance": "Dorzolamide + Timolol"
     },
     {
-        "name": "Oflodinex®",
+        "name": "Oflodinex",
         "substance": "Ofloxacin"
     },
     {
-        "name": "Oftensin®",
+        "name": "Oftensin",
         "substance": "Timolol"
     },
     {
-        "name": "Opacorden®",
+        "name": "Opacorden",
         "substance": "Amiodarone hydrochloride"
     },
     {
@@ -620,35 +620,35 @@
         "substance": "Quetiapine"
     },
     {
-        "name": "Pirolam®",
+        "name": "Pirolam",
         "substance": "Ciclopirox olamine"
     },
     {
-        "name": "Pirolam® Szampon",
+        "name": "Pirolam Szampon",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Plofed® 1%",
+        "name": "Plofed 1%",
         "substance": "Propofol"
     },
     {
-        "name": "Polcrom®",
+        "name": "Polcrom",
         "substance": "Cromoglicate disodium"
     },
     {
-        "name": "Polcrom® 2%",
+        "name": "Polcrom 2%",
         "substance": "Cromoglicate disodium"
     },
     {
-        "name": "Polfenon®",
+        "name": "Polfenon",
         "substance": "Propafenone hydrochloride"
     },
     {
-        "name": "Polfilin®",
+        "name": "Polfilin",
         "substance": "Pentoxifylline"
     },
     {
-        "name": "Polfilin® prolongatum",
+        "name": "Polfilin prolongatum",
         "substance": "Pentoxifylline"
     },
     {
@@ -660,19 +660,19 @@
         "substance": "Memantine hydrochloride"
     },
     {
-        "name": "Polopiryna® C",
+        "name": "Polopiryna C",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Polopiryna® Complex",
+        "name": "Polopiryna Complex",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Polopiryna® MAX",
+        "name": "Polopiryna MAX",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Polopiryna® S",
+        "name": "Polopiryna S",
         "substance": "Acetylsalicylic acid"
     },
     {
@@ -684,23 +684,23 @@
         "substance": "Ropinirole"
     },
     {
-        "name": "Polprazol®",
+        "name": "Polprazol",
         "substance": "Omeprazole"
     },
     {
-        "name": "Polprazol® AcidControl",
+        "name": "Polprazol AcidControl",
         "substance": "Omeprazole"
     },
     {
-        "name": "Polprazol® Max",
+        "name": "Polprazol Max",
         "substance": "Omeprazole"
     },
     {
-        "name": "Polprazol® PPH",
+        "name": "Polprazol PPH",
         "substance": "Omeprazole"
     },
     {
-        "name": "Polpril®",
+        "name": "Polpril",
         "substance": "Ramipril"
     },
     {
@@ -712,39 +712,39 @@
         "substance": "Telmisartan + Hydrochlorothiazide"
     },
     {
-        "name": "Poltram®",
+        "name": "Poltram",
         "substance": "Tramadol"
     },
     {
-        "name": "Poltram® 100",
+        "name": "Poltram 100",
         "substance": "Tramadol"
     },
     {
-        "name": "Poltram® 50",
+        "name": "Poltram 50",
         "substance": "Tramadol"
     },
     {
-        "name": "Poltram® Combo",
+        "name": "Poltram Combo",
         "substance": "Tramadol + Paracetamol"
     },
     {
-        "name": "Poltram® Retard 100",
+        "name": "Poltram Retard 100",
         "substance": "Tramadol"
     },
     {
-        "name": "Poltram® Retard 150",
+        "name": "Poltram Retard 150",
         "substance": "Tramadol"
     },
     {
-        "name": "Poltram® Retard 200",
+        "name": "Poltram Retard 200",
         "substance": "Tramadol"
     },
     {
-        "name": "Polvertic®",
+        "name": "Polvertic",
         "substance": "Betahistine dihydrochloride"
     },
     {
-        "name": "Pramolan®",
+        "name": "Pramolan",
         "substance": "Opipramol"
     },
     {
@@ -756,11 +756,11 @@
         "substance": "Propranolol hydrochloride"
     },
     {
-        "name": "Pyralgin®",
+        "name": "Pyralgin",
         "substance": "Metamizole sodium"
     },
     {
-        "name": "Pyralgina®",
+        "name": "Pyralgina",
         "substance": "Metamizole sodium"
     },
     {
@@ -776,15 +776,15 @@
         "substance": "Ketoprofen"
     },
     {
-        "name": "Relanium®",
+        "name": "Relanium",
         "substance": "Diazepam"
     },
     {
-        "name": "Relsed®",
+        "name": "Relsed",
         "substance": "Diazepam"
     },
     {
-        "name": "Rhinazin®",
+        "name": "Rhinazin",
         "substance": "Naphazoline nitrate"
     },
     {
@@ -800,15 +800,15 @@
         "substance": "Salbutamol"
     },
     {
-        "name": "Scorbolamid®",
+        "name": "Scorbolamid",
         "substance": "Ascorbic acid"
     },
     {
-        "name": "Scorbolamid® na Gardło",
+        "name": "Scorbolamid na Gardło",
         "substance": "Ascorbic acid"
     },
     {
-        "name": "Segan®",
+        "name": "Segan",
         "substance": "Selegiline hydrochloride"
     },
     {
@@ -820,15 +820,15 @@
         "substance": "Simeticone"
     },
     {
-        "name": "Simvasterol®",
+        "name": "Simvasterol",
         "substance": "Simvastatin"
     },
     {
-        "name": "Starazolin® HydroBalance One",
+        "name": "Starazolin HydroBalance One",
         "substance": "Hyaluronate sodium"
     },
     {
-        "name": "Staveran®",
+        "name": "Staveran",
         "substance": "Verapamil hydrochloride"
     },
     {
@@ -840,31 +840,31 @@
         "substance": "Sulfacetamide sodium"
     },
     {
-        "name": "Sumamigren®",
+        "name": "Sumamigren",
         "substance": "Sumatriptan"
     },
     {
-        "name": "SuperOptic®",
+        "name": "SuperOptic",
         "substance": "Folic acid"
     },
     {
-        "name": "Sustonit®",
+        "name": "Sustonit",
         "substance": "Glyceryl trinitrate"
     },
     {
-        "name": "Telfexo® 120 mg",
+        "name": "Telfexo 120 mg",
         "substance": "Fexofenadine hydrochloride"
     },
     {
-        "name": "Telfexo® 180 mg",
+        "name": "Telfexo 180 mg",
         "substance": "Fexofenadine hydrochloride"
     },
     {
-        "name": "Tialorid®",
+        "name": "Tialorid",
         "substance": "Amiloride + Hydrochlorothiazide"
     },
     {
-        "name": "Tialorid® mite",
+        "name": "Tialorid mite",
         "substance": "Amiloride + Hydrochlorothiazide"
     },
     {
@@ -880,11 +880,11 @@
         "substance": "Torasemide"
     },
     {
-        "name": "Trimesolphar®",
+        "name": "Trimesolphar",
         "substance": "Co-trimoxazole"
     },
     {
-        "name": "Trioxal®",
+        "name": "Trioxal",
         "substance": "Itraconazole"
     },
     {
@@ -896,27 +896,27 @@
         "substance": "Tropicamide"
     },
     {
-        "name": "Urotrim®",
+        "name": "Urotrim",
         "substance": "Trimethoprim"
     },
     {
-        "name": "Vanatex®",
+        "name": "Vanatex",
         "substance": "Valsartan"
     },
     {
-        "name": "Vanatex® HCT",
+        "name": "Vanatex HCT",
         "substance": "Valsartan + Hydrochlorothiazide"
     },
     {
-        "name": "Vibin®",
+        "name": "Vibin",
         "substance": "Ethinylestradiol + Drospirenone"
     },
     {
-        "name": "Vibin® Mini",
+        "name": "Vibin Mini",
         "substance": "Ethinylestradiol + Drospirenone"
     },
     {
-        "name": "Vitacon®",
+        "name": "Vitacon",
         "substance": "Phytomenadione"
     },
     {
@@ -944,7 +944,7 @@
         "substance": "Tocopherol"
     },
     {
-        "name": "Vixpo®",
+        "name": "Vixpo",
         "substance": "Ethinylestradiol + Drospirenone"
     },
     {
@@ -984,11 +984,11 @@
         "substance": "Olanzapine"
     },
     {
-        "name": "Zolpic®",
+        "name": "Zolpic",
         "substance": "Zolpidem tartrate"
     },
     {
-        "name": "Zotral®",
+        "name": "Zotral",
         "substance": "Sertraline"
     },
     {
@@ -1180,7 +1180,7 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "A-Z Granat®",
+        "name": "A-Z Granat",
         "substance": "Prep. złoż."
     },
     {
@@ -1216,7 +1216,7 @@
         "substance": "Lamivudine + Abacavir"
     },
     {
-        "name": "Abaktal®",
+        "name": "Abaktal",
         "substance": "Pefloxacin"
     },
     {
@@ -1232,11 +1232,11 @@
         "substance": "Amphotericin B"
     },
     {
-        "name": "Abilify®",
+        "name": "Abilify",
         "substance": "Aripiprazole"
     },
     {
-        "name": "Abilify® Maintena",
+        "name": "Abilify Maintena",
         "substance": "Aripiprazole"
     },
     {
@@ -1256,7 +1256,7 @@
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Absenor®",
+        "name": "Absenor",
         "substance": "Valproate sodium"
     },
     {
@@ -1264,11 +1264,11 @@
         "substance": "Acai berries"
     },
     {
-        "name": "Acard® 150 mg",
+        "name": "Acard 150 mg",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Acard® 300 mg",
+        "name": "Acard 300 mg",
         "substance": "Acetylsalicylic acid"
     },
     {
@@ -1288,15 +1288,15 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Acatar® Acti-Tabs",
+        "name": "Acatar Acti-Tabs",
         "substance": "Pseudoephedrine hydrochloride"
     },
     {
-        "name": "Acatar® HydroCare",
+        "name": "Acatar HydroCare",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Acatar® Zatoki",
+        "name": "Acatar Zatoki",
         "substance": "Ibuprofen"
     },
     {
@@ -1304,47 +1304,47 @@
         "substance": "Cetirizine dihydrochloride"
     },
     {
-        "name": "ACC®",
+        "name": "ACC",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® - (IR)",
+        "name": "ACC - (IR)",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® 600 - (IR)",
+        "name": "ACC 600 - (IR)",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® Classic",
+        "name": "ACC Classic",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® Hot",
+        "name": "ACC Hot",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® Hot - (IR)",
+        "name": "ACC Hot - (IR)",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® mini",
+        "name": "ACC mini",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® mini - (IR)",
+        "name": "ACC mini - (IR)",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® Optima",
+        "name": "ACC Optima",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® Optima - (IR)",
+        "name": "ACC Optima - (IR)",
         "substance": "Acetylcysteine"
     },
     {
-        "name": "ACC® Optima Hot",
+        "name": "ACC Optima Hot",
         "substance": "Acetylcysteine"
     },
     {
@@ -1360,31 +1360,31 @@
         "substance": "Glukoza we krwi"
     },
     {
-        "name": "Accu-Chek® Active",
+        "name": "Accu-Chek Active",
         "substance": "Glukoza we krwi"
     },
     {
-        "name": "Accu-Chek® Go",
+        "name": "Accu-Chek Go",
         "substance": "Glukoza we krwi"
     },
     {
-        "name": "Accu-Chek® Performa",
+        "name": "Accu-Chek Performa",
         "substance": "Glukoza we krwi"
     },
     {
-        "name": "Accupro® 10",
+        "name": "Accupro 10",
         "substance": "Quinapril"
     },
     {
-        "name": "Accupro® 20",
+        "name": "Accupro 20",
         "substance": "Quinapril"
     },
     {
-        "name": "Accupro® 40",
+        "name": "Accupro 40",
         "substance": "Quinapril"
     },
     {
-        "name": "Accupro® 5",
+        "name": "Accupro 5",
         "substance": "Quinapril"
     },
     {
@@ -1408,11 +1408,11 @@
         "substance": "Acebutol hydrochloride"
     },
     {
-        "name": "Acenol®",
+        "name": "Acenol",
         "substance": "Paracetamol"
     },
     {
-        "name": "Acenol® forte",
+        "name": "Acenol forte",
         "substance": "Paracetamol"
     },
     {
@@ -1420,11 +1420,11 @@
         "substance": "Lactic acid"
     },
     {
-        "name": "Acertin®",
+        "name": "Acertin",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Acesan®",
+        "name": "Acesan",
         "substance": "Acetylsalicylic acid"
     },
     {
@@ -1440,19 +1440,19 @@
         "substance": "Aciclovir"
     },
     {
-        "name": "Acidolac® baby krople",
+        "name": "Acidolac baby krople",
         "substance": "Lactobacillus rhamnosus GG"
     },
     {
-        "name": "Acidolac® caps",
+        "name": "Acidolac caps",
         "substance": "Bifidobacterium animalis"
     },
     {
-        "name": "Acidolac® Dentifix",
+        "name": "Acidolac Dentifix",
         "substance": "Ascorbic acid"
     },
     {
-        "name": "Acidolac® Dentifix Kids",
+        "name": "Acidolac Dentifix Kids",
         "substance": "Lactobacillus salivarius HM6 Paradens"
     },
     {
@@ -1480,11 +1480,11 @@
         "substance": "Acitretin"
     },
     {
-        "name": "Acix®",
+        "name": "Acix",
         "substance": "Aciclovir"
     },
     {
-        "name": "Aclasta®",
+        "name": "Aclasta",
         "substance": "Zoledronic acid"
     },
     {
@@ -1492,7 +1492,7 @@
         "substance": "Celecoxib"
     },
     {
-        "name": "Aclotin®",
+        "name": "Aclotin",
         "substance": "Ticlopidine"
     },
     {
@@ -1584,7 +1584,7 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Acticoat® Flex",
+        "name": "Acticoat Flex",
         "substance": "Emplastri antimicrobiotica"
     },
     {
@@ -1600,15 +1600,15 @@
         "substance": "Dextromethorphan hydrobromide"
     },
     {
-        "name": "ActiFerol® Fe",
+        "name": "ActiFerol Fe",
         "substance": "Prep. złoż."
     },
     {
-        "name": "ActiFerol® Fe Forte",
+        "name": "ActiFerol Fe Forte",
         "substance": "Prep. złoż."
     },
     {
-        "name": "ActiFerol® Fe START",
+        "name": "ActiFerol Fe START",
         "substance": "Prep. złoż."
     },
     {
@@ -1616,15 +1616,15 @@
         "substance": "Folic acid"
     },
     {
-        "name": "Actilyse® 10",
+        "name": "Actilyse 10",
         "substance": "Alteplase"
     },
     {
-        "name": "Actilyse® 20",
+        "name": "Actilyse 20",
         "substance": "Alteplase"
     },
     {
-        "name": "Actilyse® 50",
+        "name": "Actilyse 50",
         "substance": "Alteplase"
     },
     {
@@ -1668,7 +1668,7 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Activelle®",
+        "name": "Activelle",
         "substance": "Estradiol + Norethisterone (stałe dawki)"
     },
     {
@@ -1680,7 +1680,7 @@
         "substance": "Krill oil"
     },
     {
-        "name": "Actrapid® Penfill®",
+        "name": "Actrapid Penfill",
         "substance": "Insulin human"
     },
     {
@@ -1692,7 +1692,7 @@
         "substance": "Ketorolac"
     },
     {
-        "name": "Acurenal®",
+        "name": "Acurenal",
         "substance": "Quinapril"
     },
     {
@@ -1736,7 +1736,7 @@
         "substance": "Etonogestrel + Ethinylestradiol"
     },
     {
-        "name": "Adartrel®",
+        "name": "Adartrel",
         "substance": "Ropinirole"
     },
     {
@@ -1748,7 +1748,7 @@
         "substance": "Tamsulosin"
     },
     {
-        "name": "Adavin®",
+        "name": "Adavin",
         "substance": "Nicergoline"
     },
     {
@@ -1756,11 +1756,11 @@
         "substance": "Brentuximab vedotin"
     },
     {
-        "name": "Addamel® N",
+        "name": "Addamel N",
         "substance": "Minerals"
     },
     {
-        "name": "Addiphos®",
+        "name": "Addiphos",
         "substance": "Potassium phosphate"
     },
     {
@@ -1780,11 +1780,11 @@
         "substance": "Riociguat"
     },
     {
-        "name": "Adenocor®",
+        "name": "Adenocor",
         "substance": "Adenosine"
     },
     {
-        "name": "Adenuric®",
+        "name": "Adenuric",
         "substance": "Febuxostat"
     },
     {
@@ -1824,11 +1824,11 @@
         "substance": "Epinephrine"
     },
     {
-        "name": "Adriblastina® PFS",
+        "name": "Adriblastina PFS",
         "substance": "Doxorubicin hydrochloride"
     },
     {
-        "name": "Adriblastina® RD",
+        "name": "Adriblastina RD",
         "substance": "Doxorubicin hydrochloride"
     },
     {
@@ -1876,11 +1876,11 @@
         "substance": "Escin"
     },
     {
-        "name": "Aesciner® Retard",
+        "name": "Aesciner Retard",
         "substance": "Hippocastanum extract"
     },
     {
-        "name": "Aesculan®",
+        "name": "Aesculan",
         "substance": "Esculoside"
     },
     {
@@ -1900,7 +1900,7 @@
         "substance": "Lauromakrogol 400 (Polidocanol)"
     },
     {
-        "name": "Aethylum chloratum®",
+        "name": "Aethylum chloratum",
         "substance": "Ethyl chloride"
     },
     {
@@ -1912,11 +1912,11 @@
         "substance": "Everolimus"
     },
     {
-        "name": "AFLAVIC® COMFORT",
+        "name": "AFLAVIC COMFORT",
         "substance": "Diosmin"
     },
     {
-        "name": "AFLAVIC® MAX",
+        "name": "AFLAVIC MAX",
         "substance": "Diosmin"
     },
     {
@@ -1936,15 +1936,15 @@
         "substance": "Alclometasone"
     },
     {
-        "name": "Afobam®",
+        "name": "Afobam",
         "substance": "Alprazolam"
     },
     {
-        "name": "Afobam® - (IR)",
+        "name": "Afobam - (IR)",
         "substance": "Alprazolam"
     },
     {
-        "name": "Afrin®",
+        "name": "Afrin",
         "substance": "Oxymetazoline hydrochloride"
     },
     {
@@ -1960,27 +1960,27 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Agapurin®",
+        "name": "Agapurin",
         "substance": "Pentoxifylline"
     },
     {
-        "name": "Agapurin® SR 400",
+        "name": "Agapurin SR 400",
         "substance": "Pentoxifylline"
     },
     {
-        "name": "Agapurin® SR 400 - (IR)",
+        "name": "Agapurin SR 400 - (IR)",
         "substance": "Pentoxifylline"
     },
     {
-        "name": "Agapurin® SR 600",
+        "name": "Agapurin SR 600",
         "substance": "Pentoxifylline"
     },
     {
-        "name": "Agapurin® SR 600 - (IR)",
+        "name": "Agapurin SR 600 - (IR)",
         "substance": "Pentoxifylline"
     },
     {
-        "name": "Agastin®",
+        "name": "Agastin",
         "substance": "Omeprazole"
     },
     {
@@ -2008,23 +2008,23 @@
         "substance": "Amlodipine"
     },
     {
-        "name": "Agen® 10",
+        "name": "Agen 10",
         "substance": "Amlodipine"
     },
     {
-        "name": "Agen® 5",
+        "name": "Agen 5",
         "substance": "Amlodipine"
     },
     {
-        "name": "Agiolax®",
+        "name": "Agiolax",
         "substance": "Blond plantain"
     },
     {
-        "name": "Aglan®",
+        "name": "Aglan",
         "substance": "Meloxicam"
     },
     {
-        "name": "Aglan® 15",
+        "name": "Aglan 15",
         "substance": "Meloxicam"
     },
     {
@@ -2084,11 +2084,11 @@
         "substance": "Biperiden hydrochloride"
     },
     {
-        "name": "Akineton®",
+        "name": "Akineton",
         "substance": "Biperiden hydrochloride"
     },
     {
-        "name": "Akineton® SR 4 mg",
+        "name": "Akineton SR 4 mg",
         "substance": "Biperiden hydrochloride"
     },
     {
@@ -2096,19 +2096,19 @@
         "substance": "Latanoprost"
     },
     {
-        "name": "Aknemycin®",
+        "name": "Aknemycin",
         "substance": "Erythromycin"
     },
     {
-        "name": "Aknemycin® - (IR)",
+        "name": "Aknemycin - (IR)",
         "substance": "Erythromycin"
     },
     {
-        "name": "Aknemycin® Plus",
+        "name": "Aknemycin Plus",
         "substance": "Erythromycin"
     },
     {
-        "name": "Aknemycin® Plus - (IR)",
+        "name": "Aknemycin Plus - (IR)",
         "substance": "Erythromycin"
     },
     {
@@ -2120,11 +2120,11 @@
         "substance": "Isotretinoin"
     },
     {
-        "name": "Akneroxid® 10",
+        "name": "Akneroxid 10",
         "substance": "Benzoyl peroxide"
     },
     {
-        "name": "Akneroxid® 5",
+        "name": "Akneroxid 5",
         "substance": "Benzoyl peroxide"
     },
     {
@@ -2148,23 +2148,23 @@
         "substance": "Aloe arborescens extract"
     },
     {
-        "name": "Aksoderm®",
+        "name": "Aksoderm",
         "substance": "Retinol"
     },
     {
-        "name": "Aksoderm® Forte",
+        "name": "Aksoderm Forte",
         "substance": "Retinol"
     },
     {
-        "name": "Akutol®",
+        "name": "Akutol",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Akutol® stop",
+        "name": "Akutol stop",
         "substance": "Calcium alginate"
     },
     {
-        "name": "Akutol® stopjodin",
+        "name": "Akutol stopjodin",
         "substance": "Calcium alginate"
     },
     {
@@ -2232,7 +2232,7 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Alax® fix",
+        "name": "Alax fix",
         "substance": "Senna leaf extract"
     },
     {
@@ -2244,11 +2244,11 @@
         "substance": "Albumin human"
     },
     {
-        "name": "ALBIVAG®",
+        "name": "ALBIVAG",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Albothyl®",
+        "name": "Albothyl",
         "substance": "Policresulen"
     },
     {
@@ -2268,15 +2268,15 @@
         "substance": "Albumin human"
     },
     {
-        "name": "Alcaine®",
+        "name": "Alcaine",
         "substance": "Proxymetacaine hydrochloride"
     },
     {
-        "name": "AlcaNeff®",
+        "name": "AlcaNeff",
         "substance": "Sodium bicarbonate"
     },
     {
-        "name": "Alcep®",
+        "name": "Alcep",
         "substance": "Allium cepa extract"
     },
     {
@@ -2292,11 +2292,11 @@
         "substance": "Quetiapine"
     },
     {
-        "name": "Aldactone®",
+        "name": "Aldactone",
         "substance": "Canrenone potassium"
     },
     {
-        "name": "Aldan®",
+        "name": "Aldan",
         "substance": "Amlodipine"
     },
     {
@@ -2340,7 +2340,7 @@
         "substance": "Alendronic acid"
     },
     {
-        "name": "Alendronat-ratiopharm® 70",
+        "name": "Alendronat-ratiopharm 70",
         "substance": "Alendronic acid"
     },
     {
@@ -2380,7 +2380,7 @@
         "substance": "Loratadine"
     },
     {
-        "name": "Alermed®",
+        "name": "Alermed",
         "substance": "Cetirizine dihydrochloride"
     },
     {
@@ -2388,7 +2388,7 @@
         "substance": "Cetirizine dihydrochloride"
     },
     {
-        "name": "ALERPALUX®",
+        "name": "ALERPALUX",
         "substance": "Olopatadine"
     },
     {
@@ -2396,19 +2396,19 @@
         "substance": "Rupatadine"
     },
     {
-        "name": "Alerzina®",
+        "name": "Alerzina",
         "substance": "Cetirizine dihydrochloride"
     },
     {
-        "name": "Aleve®",
+        "name": "Aleve",
         "substance": "Naproxen"
     },
     {
-        "name": "Aleve® - (IR)",
+        "name": "Aleve - (IR)",
         "substance": "Naproxen"
     },
     {
-        "name": "Alexan®",
+        "name": "Alexan",
         "substance": "Cytarabine"
     },
     {
@@ -2424,11 +2424,11 @@
         "substance": "Alfacalcidol"
     },
     {
-        "name": "Alfalipon prodiab®",
+        "name": "Alfalipon prodiab",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Alflorex®",
+        "name": "Alflorex",
         "substance": "Prep. złoż."
     },
     {
@@ -2436,11 +2436,11 @@
         "substance": "Alfuzosin"
     },
     {
-        "name": "Alfuzostad® 10 mg",
+        "name": "Alfuzostad 10 mg",
         "substance": "Alfuzosin"
     },
     {
-        "name": "Alfuzostad® 10 mg - (IR)",
+        "name": "Alfuzostad 10 mg - (IR)",
         "substance": "Alfuzosin"
     },
     {
@@ -2468,11 +2468,11 @@
         "substance": "Allium sativum oil"
     },
     {
-        "name": "Alka-Seltzer®",
+        "name": "Alka-Seltzer",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Alka-Seltzer® - (IR)",
+        "name": "Alka-Seltzer - (IR)",
         "substance": "Acetylsalicylic acid"
     },
     {
@@ -2480,7 +2480,7 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Alkeran®",
+        "name": "Alkeran",
         "substance": "Melphalan"
     },
     {
@@ -2492,7 +2492,7 @@
         "substance": "Cromoglicate disodium"
     },
     {
-        "name": "Allergo-COMOD®",
+        "name": "Allergo-COMOD",
         "substance": "Cromoglicate disodium"
     },
     {
@@ -2500,15 +2500,15 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Allergocrom®",
+        "name": "Allergocrom",
         "substance": "Cromoglicate disodium"
     },
     {
-        "name": "Allergodil®",
+        "name": "Allergodil",
         "substance": "Azelastine hydrochloride"
     },
     {
-        "name": "Allergovit®",
+        "name": "Allergovit",
         "substance": "Allergen extracts"
     },
     {
@@ -2516,55 +2516,55 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Allevyn® Adhesive",
+        "name": "Allevyn Adhesive",
         "substance": "Emplastri polyurethanum spumatum"
     },
     {
-        "name": "Allevyn® Ag Adhesive",
+        "name": "Allevyn Ag Adhesive",
         "substance": "Emplastri antimicrobiotica"
     },
     {
-        "name": "Allevyn® Ag Heel",
+        "name": "Allevyn Ag Heel",
         "substance": "Emplastri antimicrobiotica"
     },
     {
-        "name": "Allevyn® Ag Non Adhesive",
+        "name": "Allevyn Ag Non Adhesive",
         "substance": "Emplastri antimicrobiotica"
     },
     {
-        "name": "Allevyn® Ag Sacrum",
+        "name": "Allevyn Ag Sacrum",
         "substance": "Emplastri antimicrobiotica"
     },
     {
-        "name": "Allevyn® Heel",
+        "name": "Allevyn Heel",
         "substance": "Emplastri antimicrobiotica"
     },
     {
-        "name": "Allevyn® Life",
+        "name": "Allevyn Life",
         "substance": "Emplastri microfibricum cellulosae"
     },
     {
-        "name": "Allevyn® Life Heel",
+        "name": "Allevyn Life Heel",
         "substance": "Emplastri microfibricum cellulosae"
     },
     {
-        "name": "Allevyn® Life Sacrum",
+        "name": "Allevyn Life Sacrum",
         "substance": "Emplastri microfibricum cellulosae"
     },
     {
-        "name": "Allevyn® Lite",
+        "name": "Allevyn Lite",
         "substance": "Emplastri polyurethanum spumatum"
     },
     {
-        "name": "Allevyn® Non Adhesive",
+        "name": "Allevyn Non Adhesive",
         "substance": "Emplastri polyurethanum spumatum"
     },
     {
-        "name": "Allevyn® Sacrum",
+        "name": "Allevyn Sacrum",
         "substance": "Emplastri antimicrobiotica"
     },
     {
-        "name": "Alliofil®",
+        "name": "Alliofil",
         "substance": "Allium sativum extract"
     },
     {
@@ -2576,7 +2576,7 @@
         "substance": "Allium sativum extract"
     },
     {
-        "name": "Allupol®",
+        "name": "Allupol",
         "substance": "Allopurinol"
     },
     {
@@ -2628,7 +2628,7 @@
         "substance": "Losartan + Amlodipine"
     },
     {
-        "name": "Aloxi®",
+        "name": "Aloxi",
         "substance": "Palonosetron"
     },
     {
@@ -2636,7 +2636,7 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Alphagan®",
+        "name": "Alphagan",
         "substance": "Brimonidine tartate"
     },
     {
@@ -2644,23 +2644,23 @@
         "substance": "Vitamins"
     },
     {
-        "name": "Alpicort®",
+        "name": "Alpicort",
         "substance": "Prednisolone"
     },
     {
-        "name": "Alpicort® - (IR)",
+        "name": "Alpicort - (IR)",
         "substance": "Prednisolone"
     },
     {
-        "name": "Alpicort® E",
+        "name": "Alpicort E",
         "substance": "Estradiol benzoate"
     },
     {
-        "name": "Alpicort® E - (IR)",
+        "name": "Alpicort E - (IR)",
         "substance": "Estradiol benzoate"
     },
     {
-        "name": "Alpika®",
+        "name": "Alpika",
         "substance": "Aqua sterilisata"
     },
     {
@@ -2676,7 +2676,7 @@
         "substance": "Eftrenonacog alfa"
     },
     {
-        "name": "Alprox®",
+        "name": "Alprox",
         "substance": "Alprazolam"
     },
     {
@@ -2688,15 +2688,15 @@
         "substance": "Aluminium acetotartrate"
     },
     {
-        "name": "Altacet®",
+        "name": "Altacet",
         "substance": "Aluminium acetotartrate"
     },
     {
-        "name": "Altacet® ICE",
+        "name": "Altacet ICE",
         "substance": "Menthol"
     },
     {
-        "name": "Altargo®",
+        "name": "Altargo",
         "substance": "Retapamulin"
     },
     {
@@ -2708,11 +2708,11 @@
         "substance": "Aluminium acetotartrate"
     },
     {
-        "name": "Alte® Forte z miodem",
+        "name": "Alte Forte z miodem",
         "substance": "Althaea root extract"
     },
     {
-        "name": "Alterutin® C",
+        "name": "Alterutin C",
         "substance": "Rutin"
     },
     {
@@ -2724,19 +2724,19 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Alugastrin®",
+        "name": "Alugastrin",
         "substance": "Dihydroxialumini sodium carbonate"
     },
     {
-        "name": "Alugastrin® Regulacja",
+        "name": "Alugastrin Regulacja",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Alugastrin® Trawienie",
+        "name": "Alugastrin Trawienie",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Alugastrin® Wzdęcia",
+        "name": "Alugastrin Wzdęcia",
         "substance": "Prep. złoż."
     },
     {
@@ -2744,7 +2744,7 @@
         "substance": "Alfuzosin"
     },
     {
-        "name": "Alumag®",
+        "name": "Alumag",
         "substance": "Aluminium hydroxide"
     },
     {
@@ -2764,19 +2764,19 @@
         "substance": "Allergen extracts"
     },
     {
-        "name": "Alventa®",
+        "name": "Alventa",
         "substance": "Venlafaxine"
     },
     {
-        "name": "Alventa® - (IR)",
+        "name": "Alventa - (IR)",
         "substance": "Venlafaxine"
     },
     {
-        "name": "Alvesco® 160",
+        "name": "Alvesco 160",
         "substance": "Ciclesonide"
     },
     {
-        "name": "Alvesco® 80",
+        "name": "Alvesco 80",
         "substance": "Ciclesonide"
     },
     {
@@ -2792,27 +2792,27 @@
         "substance": "Allergen extracts"
     },
     {
-        "name": "Amantix®",
+        "name": "Amantix",
         "substance": "Amantadine sulfate"
     },
     {
-        "name": "Amarosal®",
+        "name": "Amarosal",
         "substance": "Foeniculum extract"
     },
     {
-        "name": "Amaryl® 1",
+        "name": "Amaryl 1",
         "substance": "Glimepiride"
     },
     {
-        "name": "Amaryl® 2",
+        "name": "Amaryl 2",
         "substance": "Glimepiride"
     },
     {
-        "name": "Amaryl® 3",
+        "name": "Amaryl 3",
         "substance": "Glimepiride"
     },
     {
-        "name": "Amaryl® 4",
+        "name": "Amaryl 4",
         "substance": "Glimepiride"
     },
     {
@@ -2820,11 +2820,11 @@
         "substance": "Amphotericin B"
     },
     {
-        "name": "Ambro®",
+        "name": "Ambro",
         "substance": "Ambroxol hydrochloride"
     },
     {
-        "name": "AmbroHEXAL®",
+        "name": "AmbroHEXAL",
         "substance": "Ambroxol hydrochloride"
     },
     {
@@ -2856,11 +2856,11 @@
         "substance": "Ambroxol hydrochloride"
     },
     {
-        "name": "Amertil Bio®",
+        "name": "Amertil Bio",
         "substance": "Cetirizine dihydrochloride"
     },
     {
-        "name": "Amertil®",
+        "name": "Amertil",
         "substance": "Cetirizine dihydrochloride"
     },
     {
@@ -2900,7 +2900,7 @@
         "substance": "Amino acids"
     },
     {
-        "name": "Aminomix® 1 Novum",
+        "name": "Aminomix 1 Novum",
         "substance": "Amino acids"
     },
     {
@@ -2908,23 +2908,23 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Aminoplasmal® 15%",
+        "name": "Aminoplasmal 15%",
         "substance": "Amino acids"
     },
     {
-        "name": "Aminoplasmal® B.Braun 10% E",
+        "name": "Aminoplasmal B.Braun 10% E",
         "substance": "Amino acids"
     },
     {
-        "name": "Aminoplasmal® B.Braun 15% E",
+        "name": "Aminoplasmal B.Braun 15% E",
         "substance": "Amino acids"
     },
     {
-        "name": "Aminoplasmal® Hepa 10%",
+        "name": "Aminoplasmal Hepa 10%",
         "substance": "Amino acids"
     },
     {
-        "name": "Aminosteril® N-Hepa 8%",
+        "name": "Aminosteril N-Hepa 8%",
         "substance": "Amino acids"
     },
     {
@@ -2932,7 +2932,7 @@
         "substance": "Amino acids"
     },
     {
-        "name": "Amiokordin®",
+        "name": "Amiokordin",
         "substance": "Amiodarone"
     },
     {
@@ -2996,19 +2996,19 @@
         "substance": "Amlodipine"
     },
     {
-        "name": "Amlonor®",
+        "name": "Amlonor",
         "substance": "Amlodipine"
     },
     {
-        "name": "Amlopin®",
+        "name": "Amlopin",
         "substance": "Amlodipine"
     },
     {
-        "name": "Amlopin® - (IR)",
+        "name": "Amlopin - (IR)",
         "substance": "Amlodipine"
     },
     {
-        "name": "Amlozek®",
+        "name": "Amlozek",
         "substance": "Amlodipine"
     },
     {
@@ -3032,27 +3032,27 @@
         "substance": "Biotin"
     },
     {
-        "name": "Amoksiklav®",
+        "name": "Amoksiklav",
         "substance": "Amoxicillin + Clavulanic acid"
     },
     {
-        "name": "Amoksiklav® - (IR)",
+        "name": "Amoksiklav - (IR)",
         "substance": "Amoxicillin + Clavulanic acid"
     },
     {
-        "name": "Amoksiklav® Quicktab",
+        "name": "Amoksiklav Quicktab",
         "substance": "Amoxicillin + Clavulanic acid"
     },
     {
-        "name": "Amol®",
+        "name": "Amol",
         "substance": "Menthol"
     },
     {
-        "name": "Amolowe® na gardło",
+        "name": "Amolowe na gardło",
         "substance": "Menthol"
     },
     {
-        "name": "Amolowe® na gardło z miodem i witaminą C",
+        "name": "Amolowe na gardło z miodem i witaminą C",
         "substance": "Menthol"
     },
     {
@@ -3064,15 +3064,15 @@
         "substance": "Amorolfine hydrochloride"
     },
     {
-        "name": "Amotaks®",
+        "name": "Amotaks",
         "substance": "Amoxicillin"
     },
     {
-        "name": "Amotaks® Dis",
+        "name": "Amotaks Dis",
         "substance": "Amoxicillin"
     },
     {
-        "name": "Amphocil®",
+        "name": "Amphocil",
         "substance": "Amphotericin B"
     },
     {
@@ -3116,27 +3116,27 @@
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Anafranil®",
+        "name": "Anafranil",
         "substance": "Clomipramine"
     },
     {
-        "name": "Anafranil® SR 75",
+        "name": "Anafranil SR 75",
         "substance": "Clomipramine"
     },
     {
-        "name": "Anaftin® Baby",
+        "name": "Anaftin Baby",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Anaftin® Gel",
+        "name": "Anaftin Gel",
         "substance": "Aqua sterilisata"
     },
     {
-        "name": "Anaftin® Mouthwash",
+        "name": "Anaftin Mouthwash",
         "substance": "Aqua sterilisata"
     },
     {
-        "name": "Anaftin® Spray",
+        "name": "Anaftin Spray",
         "substance": "Aqua sterilisata"
     },
     {
@@ -3180,7 +3180,7 @@
         "substance": "Anagrelide"
     },
     {
-        "name": "Anaketon®",
+        "name": "Anaketon",
         "substance": "Prep. złoż."
     },
     {
@@ -3188,15 +3188,15 @@
         "substance": "Camphor"
     },
     {
-        "name": "Anapran®",
+        "name": "Anapran",
         "substance": "Naproxen"
     },
     {
-        "name": "Anapran® EC",
+        "name": "Anapran EC",
         "substance": "Naproxen"
     },
     {
-        "name": "Anapran® Neo",
+        "name": "Anapran Neo",
         "substance": "Naproxen"
     },
     {
@@ -3224,11 +3224,11 @@
         "substance": "Flucytosine"
     },
     {
-        "name": "Andepin®",
+        "name": "Andepin",
         "substance": "Fluoxetine"
     },
     {
-        "name": "Androcur®",
+        "name": "Androcur",
         "substance": "Cyproterone acetate"
     },
     {
@@ -3240,11 +3240,11 @@
         "substance": "Finasteride"
     },
     {
-        "name": "Androtop®",
+        "name": "Androtop",
         "substance": "Testosterone"
     },
     {
-        "name": "Androvit® Plus",
+        "name": "Androvit Plus",
         "substance": "Beta-carotene"
     },
     {
@@ -3252,23 +3252,23 @@
         "substance": "Lidocaine"
     },
     {
-        "name": "Anesteloc® 20",
+        "name": "Anesteloc 20",
         "substance": "Pantoprazole"
     },
     {
-        "name": "Anesteloc® 40",
+        "name": "Anesteloc 40",
         "substance": "Pantoprazole"
     },
     {
-        "name": "Anesteloc® Max",
+        "name": "Anesteloc Max",
         "substance": "Pantoprazole"
     },
     {
-        "name": "Anexate®",
+        "name": "Anexate",
         "substance": "Flumazenil"
     },
     {
-        "name": "Angeliq®",
+        "name": "Angeliq",
         "substance": "Estradiol + Drospirenone"
     },
     {
@@ -3296,7 +3296,7 @@
         "substance": "Codeine phosphate"
     },
     {
-        "name": "Antidral®",
+        "name": "Antidral",
         "substance": "Aluminium chloride"
     },
     {
@@ -3360,43 +3360,43 @@
         "substance": "Olanzapine"
     },
     {
-        "name": "Apap®",
+        "name": "Apap",
         "substance": "Paracetamol"
     },
     {
-        "name": "Apap® ból i gorączka",
+        "name": "Apap ból i gorączka",
         "substance": "Paracetamol"
     },
     {
-        "name": "Apap® ból i gorączka C plus",
+        "name": "Apap ból i gorączka C plus",
         "substance": "Ascorbic acid"
     },
     {
-        "name": "Apap® Direct",
+        "name": "Apap Direct",
         "substance": "Paracetamol"
     },
     {
-        "name": "Apap® dla dzieci Forte",
+        "name": "Apap dla dzieci Forte",
         "substance": "Paracetamol"
     },
     {
-        "name": "Apap® Extra",
+        "name": "Apap Extra",
         "substance": "Caffeine"
     },
     {
-        "name": "Apap® Junior",
+        "name": "Apap Junior",
         "substance": "Paracetamol"
     },
     {
-        "name": "Apap® Noc",
+        "name": "Apap Noc",
         "substance": "Diphenhydramine hydrochloride"
     },
     {
-        "name": "Apap® Przeziębienie",
+        "name": "Apap Przeziębienie",
         "substance": "Ascorbic acid"
     },
     {
-        "name": "Apap® Przeziębienie CAPS",
+        "name": "Apap Przeziębienie CAPS",
         "substance": "Paracetamol"
     },
     {
@@ -3404,7 +3404,7 @@
         "substance": "Ropinirole"
     },
     {
-        "name": "Aperisan®Gel",
+        "name": "AperisanGel",
         "substance": "Salvia officinalis"
     },
     {
@@ -3500,7 +3500,7 @@
         "substance": "Guaiacolsulfonate"
     },
     {
-        "name": "ApiUrin®",
+        "name": "ApiUrin",
         "substance": "Cranberry extract"
     },
     {
@@ -3744,11 +3744,11 @@
         "substance": "Cefuroxime"
     },
     {
-        "name": "Apselan®",
+        "name": "Apselan",
         "substance": "Pseudoephedrine hydrochloride"
     },
     {
-        "name": "Apselan® Plus",
+        "name": "Apselan Plus",
         "substance": "Ibuprofen"
     },
     {
@@ -3768,35 +3768,35 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Aqua-Gel®",
+        "name": "Aqua-Gel",
         "substance": "Emplastri hydropolymerosa"
     },
     {
-        "name": "Aquacel®",
+        "name": "Aquacel",
         "substance": "Emplastri alginatosa et hydrofibrica"
     },
     {
-        "name": "Aquacel® Ag",
+        "name": "Aquacel Ag",
         "substance": "Emplastri antimicrobiotica"
     },
     {
-        "name": "Aquacel® Ag Extra",
+        "name": "Aquacel Ag Extra",
         "substance": "Emplastri antimicrobiotica"
     },
     {
-        "name": "Aquacel® Ag Foam",
+        "name": "Aquacel Ag Foam",
         "substance": "Emplastri collagenosa"
     },
     {
-        "name": "Aquacel® Ag+ Extra",
+        "name": "Aquacel Ag+ Extra",
         "substance": "Emplastri collagenosa"
     },
     {
-        "name": "Aquacel® Extra",
+        "name": "Aquacel Extra",
         "substance": "Emplastri microfibricum cellulosae"
     },
     {
-        "name": "Aquacel® Foam",
+        "name": "Aquacel Foam",
         "substance": "Emplastri microfibricum cellulosae"
     },
     {
@@ -3820,7 +3820,7 @@
         "substance": "Emplastri conlativi"
     },
     {
-        "name": "Aranesp®",
+        "name": "Aranesp",
         "substance": "Darbepoetin alfa"
     },
     {
@@ -3828,31 +3828,31 @@
         "substance": "Leflunomide"
     },
     {
-        "name": "Arava® 10 mg",
+        "name": "Arava 10 mg",
         "substance": "Leflunomide"
     },
     {
-        "name": "Arava® 20 mg",
+        "name": "Arava 20 mg",
         "substance": "Leflunomide"
     },
     {
-        "name": "Arcalen®",
+        "name": "Arcalen",
         "substance": "Arnica montana"
     },
     {
-        "name": "Arcoxia®",
+        "name": "Arcoxia",
         "substance": "Etoricoxib"
     },
     {
-        "name": "Arduan®",
+        "name": "Arduan",
         "substance": "Pipecuronium bromidebromek pipekuronium"
     },
     {
-        "name": "Arechin®",
+        "name": "Arechin",
         "substance": "Chloroquine diphosphate"
     },
     {
-        "name": "Areplex®",
+        "name": "Areplex",
         "substance": "Clopidogrel"
     },
     {
@@ -3876,31 +3876,31 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Argol® Essenza Balsamica",
+        "name": "Argol Essenza Balsamica",
         "substance": "Ethyl salicylate"
     },
     {
-        "name": "Argol® Grip",
+        "name": "Argol Grip",
         "substance": "Camphor"
     },
     {
-        "name": "Argol® Rheuma",
+        "name": "Argol Rheuma",
         "substance": "Melissa extract"
     },
     {
-        "name": "Argosulfan®",
+        "name": "Argosulfan",
         "substance": "Sulfathiazole silver"
     },
     {
-        "name": "Argosulfan® - (IR)",
+        "name": "Argosulfan - (IR)",
         "substance": "Sulfathiazole silver"
     },
     {
-        "name": "Argotiab® 2% krem",
+        "name": "Argotiab 2% krem",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Argotiab® spray",
+        "name": "Argotiab spray",
         "substance": "Prep. złoż."
     },
     {
@@ -3912,11 +3912,11 @@
         "substance": "Aripiprazole"
     },
     {
-        "name": "Aricept®",
+        "name": "Aricept",
         "substance": "Donepezil hydrochloride"
     },
     {
-        "name": "Aricept® - (IR)",
+        "name": "Aricept - (IR)",
         "substance": "Donepezil hydrochloride"
     },
     {
@@ -3924,15 +3924,15 @@
         "substance": "Aripiprazole"
     },
     {
-        "name": "Arilin® Rapid",
+        "name": "Arilin Rapid",
         "substance": "Metronidazole"
     },
     {
-        "name": "Arilin® Rapid - (IR)",
+        "name": "Arilin Rapid - (IR)",
         "substance": "Metronidazole"
     },
     {
-        "name": "Arimidex®",
+        "name": "Arimidex",
         "substance": "Anastrozole"
     },
     {
@@ -3980,7 +3980,7 @@
         "substance": "Aripiprazole"
     },
     {
-        "name": "Arixtra®",
+        "name": "Arixtra",
         "substance": "Fondaparinux"
     },
     {
@@ -4048,23 +4048,23 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Artecholin®",
+        "name": "Artecholin",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Artelac®",
+        "name": "Artelac",
         "substance": "Hypromellose"
     },
     {
-        "name": "Artelac® - (IR)",
+        "name": "Artelac - (IR)",
         "substance": "Hypromellose"
     },
     {
-        "name": "Artelac® Rebalance",
+        "name": "Artelac Rebalance",
         "substance": "Hyaluronic acid"
     },
     {
-        "name": "Artelac® Rebalance UNO",
+        "name": "Artelac Rebalance UNO",
         "substance": "Hyaluronic acid"
     },
     {
@@ -4072,11 +4072,11 @@
         "substance": "Artemisia absinthie"
     },
     {
-        "name": "Arthroblock®",
+        "name": "Arthroblock",
         "substance": "Chondroitin sulphate"
     },
     {
-        "name": "Arthroblock®; -Forte",
+        "name": "Arthroblock; -Forte",
         "substance": "Chondroitin sulphate"
     },
     {
@@ -4088,43 +4088,43 @@
         "substance": "Homeopathic"
     },
     {
-        "name": "Arthron® Complex",
+        "name": "Arthron Complex",
         "substance": "Chondroitin sulphate"
     },
     {
-        "name": "Arthron® Flex",
+        "name": "Arthron Flex",
         "substance": "Glucosamine sulphate"
     },
     {
-        "name": "ArthroStop® Classic",
+        "name": "ArthroStop Classic",
         "substance": "Glucosamine sulphate"
     },
     {
-        "name": "ArthroStop® Lady",
+        "name": "ArthroStop Lady",
         "substance": "Calcium"
     },
     {
-        "name": "Arthrotec®",
+        "name": "Arthrotec",
         "substance": "Diclofenac sodium"
     },
     {
-        "name": "Arthrotec® - (IR)",
+        "name": "Arthrotec - (IR)",
         "substance": "Diclofenac sodium"
     },
     {
-        "name": "Arthrotec® forte",
+        "name": "Arthrotec forte",
         "substance": "Diclofenac sodium"
     },
     {
-        "name": "Arthryl Fast®",
+        "name": "Arthryl Fast",
         "substance": "Glucosamine sulphate"
     },
     {
-        "name": "Arthryl®",
+        "name": "Arthryl",
         "substance": "Glucosamine"
     },
     {
-        "name": "Arthryl® - (IR)",
+        "name": "Arthryl - (IR)",
         "substance": "Glucosamine"
     },
     {
@@ -4144,23 +4144,23 @@
         "substance": "Aprotinin"
     },
     {
-        "name": "Artresan OPTIMA 1 a DAY®",
+        "name": "Artresan OPTIMA 1 a DAY",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Artresan® COMFORT",
+        "name": "Artresan COMFORT",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Artresan® EFEKT",
+        "name": "Artresan EFEKT",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Artresan® Kapsaicyna",
+        "name": "Artresan Kapsaicyna",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Artresan® OPTIMA",
+        "name": "Artresan OPTIMA",
         "substance": "Prep. złoż."
     },
     {
@@ -4240,7 +4240,7 @@
         "substance": "Fluticasone + Salmeterol"
     },
     {
-        "name": "Ascalcin® Plus",
+        "name": "Ascalcin Plus",
         "substance": "Acetylsalicylic acid"
     },
     {
@@ -4252,11 +4252,11 @@
         "substance": "Glukoza we krwi"
     },
     {
-        "name": "Ascofer®",
+        "name": "Ascofer",
         "substance": "Ferrous gluconate"
     },
     {
-        "name": "Ascorgem®",
+        "name": "Ascorgem",
         "substance": "Ascorbic acid"
     },
     {
@@ -4292,7 +4292,7 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Asentra®",
+        "name": "Asentra",
         "substance": "Sertraline"
     },
     {
@@ -4304,11 +4304,11 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Asertin® 100",
+        "name": "Asertin 100",
         "substance": "Sertraline"
     },
     {
-        "name": "Asertin® 50",
+        "name": "Asertin 50",
         "substance": "Sertraline"
     },
     {
@@ -4316,23 +4316,23 @@
         "substance": "Milrinone"
     },
     {
-        "name": "Asmag®",
+        "name": "Asmag",
         "substance": "Magnesium hydroaspartate"
     },
     {
-        "name": "Asmag® B6",
+        "name": "Asmag B6",
         "substance": "Magnesium hydroaspartate"
     },
     {
-        "name": "Asmag® B6 Max",
+        "name": "Asmag B6 Max",
         "substance": "Magnesium hydroaspartate"
     },
     {
-        "name": "Asmag® B6 Max D3",
+        "name": "Asmag B6 Max D3",
         "substance": "Magnesium citrate"
     },
     {
-        "name": "Asmag® forte",
+        "name": "Asmag forte",
         "substance": "Magnesium hydroaspartate"
     },
     {
@@ -4344,11 +4344,11 @@
         "substance": "Montelukast"
     },
     {
-        "name": "Asolfena®",
+        "name": "Asolfena",
         "substance": "Solifenacin succinate"
     },
     {
-        "name": "Aspafar® Farmapol",
+        "name": "Aspafar Farmapol",
         "substance": "Magnesium hydroaspartate"
     },
     {
@@ -4364,11 +4364,11 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Aspargin®",
+        "name": "Aspargin",
         "substance": "Magnesium hydroaspartate + Potassium hydroaspartate"
     },
     {
-        "name": "Aspecton® Junior",
+        "name": "Aspecton Junior",
         "substance": "Prep. złoż."
     },
     {
@@ -4380,67 +4380,67 @@
         "substance": "Meloxicam"
     },
     {
-        "name": "Aspimag®",
+        "name": "Aspimag",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin®",
+        "name": "Aspirin",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® - (IR)",
+        "name": "Aspirin - (IR)",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® 300",
+        "name": "Aspirin 300",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® C",
+        "name": "Aspirin C",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® C - (IR)",
+        "name": "Aspirin C - (IR)",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® C Forte",
+        "name": "Aspirin C Forte",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Cardio",
+        "name": "Aspirin Cardio",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Cardio - (IR)",
+        "name": "Aspirin Cardio - (IR)",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Complex",
+        "name": "Aspirin Complex",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Complex - (IR)",
+        "name": "Aspirin Complex - (IR)",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Complex Hot",
+        "name": "Aspirin Complex Hot",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Effect",
+        "name": "Aspirin Effect",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Extra",
+        "name": "Aspirin Extra",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Pro",
+        "name": "Aspirin Pro",
         "substance": "Acetylsalicylic acid"
     },
     {
-        "name": "Aspirin® Ultra Fast",
+        "name": "Aspirin Ultra Fast",
         "substance": "Acetylsalicylic acid"
     },
     {
@@ -4464,7 +4464,7 @@
         "substance": "Montelukast"
     },
     {
-        "name": "Astres® Forte",
+        "name": "Astres Forte",
         "substance": "Magnesium"
     },
     {
@@ -4484,15 +4484,15 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Atacand®",
+        "name": "Atacand",
         "substance": "Candesartan"
     },
     {
-        "name": "Atarax®",
+        "name": "Atarax",
         "substance": "Hydroxyzine hydrochloride"
     },
     {
-        "name": "Atecortin®",
+        "name": "Atecortin",
         "substance": "Hydrocortisone acetate"
     },
     {
@@ -4516,39 +4516,39 @@
         "substance": "Atomoxetine"
     },
     {
-        "name": "Atoperal® Baby Emulsja do ciała",
+        "name": "Atoperal Baby Emulsja do ciała",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Atoperal® Baby Plus Emulsja do ciała",
+        "name": "Atoperal Baby Plus Emulsja do ciała",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Atoperal® Baby Plus Emulsja do kąpieli",
+        "name": "Atoperal Baby Plus Emulsja do kąpieli",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Atoperal® Baby Plus Krem",
+        "name": "Atoperal Baby Plus Krem",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Atoperal® Baby Plus Krochmal do kąpieli",
+        "name": "Atoperal Baby Plus Krochmal do kąpieli",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Atoperal® Baby Plus Pianka do mycia",
+        "name": "Atoperal Baby Plus Pianka do mycia",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Atoperal® Baby Plus Szampon",
+        "name": "Atoperal Baby Plus Szampon",
         "substance": "Prep. złoż."
     },
     {
-        "name": "Atoperal® Plus emulsja do ciała",
+        "name": "Atoperal Plus emulsja do ciała",
         "substance": "Aqua sterilisata"
     },
     {
-        "name": "Atoris®",
+        "name": "Atoris",
         "substance": "Atorvastatin"
     },
     {
@@ -4596,7 +4596,7 @@
         "substance": "Atosiban"
     },
     {
-        "name": "Atossa®",
+        "name": "Atossa",
         "substance": "Ondansetron hydrochloride"
     },
     {
@@ -4612,15 +4612,15 @@
         "substance": "Atorvastatin"
     },
     {
-        "name": "Atram® 12,5 mg",
+        "name": "Atram 12,5 mg",
         "substance": "Carvedilol"
     },
     {
-        "name": "Atram® 25 mg",
+        "name": "Atram 25 mg",
         "substance": "Carvedilol"
     },
     {
-        "name": "Atram® 6,25 mg",
+        "name": "Atram 6,25 mg",
         "substance": "Carvedilol"
     },
     {
@@ -4644,11 +4644,11 @@
         "substance": "Quetiapine"
     },
     {
-        "name": "Atrovent®",
+        "name": "Atrovent",
         "substance": "Ipratropium bromide"
     },
     {
-        "name": "Atrovent® N",
+        "name": "Atrovent N",
         "substance": "Ipratropium bromide"
     },
     {
@@ -4712,23 +4712,23 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Augmentin®",
+        "name": "Augmentin",
         "substance": "Amoxicillin + Clavulanic acid"
     },
     {
-        "name": "Augmentin® - (IR)",
+        "name": "Augmentin - (IR)",
         "substance": "Amoxicillin + Clavulanic acid"
     },
     {
-        "name": "Augmentin® ES",
+        "name": "Augmentin ES",
         "substance": "Amoxicillin + Clavulanic acid"
     },
     {
-        "name": "Augmentin® SR",
+        "name": "Augmentin SR",
         "substance": "Amoxicillin + Clavulanic acid"
     },
     {
-        "name": "Aulin®",
+        "name": "Aulin",
         "substance": "Nimesulide"
     },
     {
@@ -4744,7 +4744,7 @@
         "substance": "Citalopram"
     },
     {
-        "name": "Aurorix®",
+        "name": "Aurorix",
         "substance": "Moclobemide"
     },
     {
@@ -4776,7 +4776,7 @@
         "substance": "Metformin hydrochloride"
     },
     {
-        "name": "Avamys®",
+        "name": "Avamys",
         "substance": "Fluticasone"
     },
     {
@@ -4784,7 +4784,7 @@
         "substance": "Valsartan"
     },
     {
-        "name": "Avastin®",
+        "name": "Avastin",
         "substance": "Bevacizumab"
     },
     {
@@ -4824,11 +4824,11 @@
         "substance": "Prep. złoż."
     },
     {
-        "name": "Aviomarin®",
+        "name": "Aviomarin",
         "substance": "Dimenhydrinate"
     },
     {
-        "name": "Aviomarin® Natural",
+        "name": "Aviomarin Natural",
         "substance": "Prep. złoż."
     },
     {
@@ -4896,7 +4896,7 @@
         "substance": "Ciclopirox"
     },
     {
-        "name": "Axopolis®",
+        "name": "Axopolis",
         "substance": "Prep. złoż."
     },
     {
@@ -4904,7 +4904,7 @@
         "substance": "Ibuprofen"
     },
     {
-        "name": "AXOSINUS®",
+        "name": "AXOSINUS",
         "substance": "Prep. złoż."
     },
     {
@@ -4916,7 +4916,7 @@
         "substance": "Aciclovir"
     },
     {
-        "name": "Axtil®",
+        "name": "Axtil",
         "substance": "Ramipril"
     },
     {
@@ -4928,7 +4928,7 @@
         "substance": "Valsartan + Hydrochlorothiazide"
     },
     {
-        "name": "Axura®",
+        "name": "Axura",
         "substance": "Memantine hydrochloride"
     },
     {
@@ -4936,11 +4936,11 @@
         "substance": "Venlafaxine"
     },
     {
-        "name": "Azalia®",
+        "name": "Azalia",
         "substance": "Desogestrel"
     },
     {
-        "name": "Azalia® - (IR)",
+        "name": "Azalia - (IR)",
         "substance": "Desogestrel"
     },
     {
@@ -4964,7 +4964,7 @@
         "substance": "Azelastine hydrochloride"
     },
     {
-        "name": "Azibiot®",
+        "name": "Azibiot",
         "substance": "Azithromycin"
     },
     {
@@ -4976,7 +4976,7 @@
         "substance": "Rasagiline"
     },
     {
-        "name": "Azimycin®",
+        "name": "Azimycin",
         "substance": "Azithromycin"
     },
     {
@@ -5012,11 +5012,11 @@
         "substance": "Azithromycin"
     },
     {
-        "name": "Azix®",
+        "name": "Azix",
         "substance": "Azithromycin"
     },
     {
-        "name": "Azomyr®",
+        "name": "Azomyr",
         "substance": "Desloratadine"
     },
     {
@@ -5024,11 +5024,11 @@
         "substance": "Brinzolamide"
     },
     {
-        "name": "Azucalen®",
+        "name": "Azucalen",
         "substance": "Calendula extract"
     },
     {
-        "name": "Azulan®",
+        "name": "Azulan",
         "substance": "Chamomile"
     },
     {
@@ -5048,7 +5048,7 @@
         "substance": "Azithromycin"
     },
     {
-        "name": "Azzalure®",
+        "name": "Azzalure",
         "substance": "Botulinum A toxin"
     },
     {
@@ -5092,27 +5092,27 @@
         "substance": "Azithromycin"
     },
     {
-        "name": "Bactrim®",
+        "name": "Bactrim",
         "substance": "Co-trimoxazole"
     },
     {
-        "name": "Bactrim® - (IR)",
+        "name": "Bactrim - (IR)",
         "substance": "Co-trimoxazole"
     },
     {
-        "name": "Bactrim® forte",
+        "name": "Bactrim forte",
         "substance": "Co-trimoxazole"
     },
     {
-        "name": "Bactrim® forte - (IR)",
+        "name": "Bactrim forte - (IR)",
         "substance": "Co-trimoxazole"
     },
     {
-        "name": "Bactroban®",
+        "name": "Bactroban",
         "substance": "Mupirocin"
     },
     {
-        "name": "Bactroban® - (IR)",
+        "name": "Bactroban - (IR)",
         "substance": "Mupirocin"
     },
     {
@@ -5168,19 +5168,19 @@
         "substance": "Menthol"
     },
     {
-        "name": "Balsolan®",
+        "name": "Balsolan",
         "substance": "Balsam of peru"
     },
     {
-        "name": "Baraclude®",
+        "name": "Baraclude",
         "substance": "Entecavir"
     },
     {
-        "name": "Batrafen®",
+        "name": "Batrafen",
         "substance": "Ciclopirox olamine"
     },
     {
-        "name": "Batrafen® - (IR)",
+        "name": "Batrafen - (IR)",
         "substance": "Ciclopirox olamine"
     },
     {
@@ -5292,15 +5292,15 @@
         "substance": "Beclometasone dipropionate"
     },
     {
-        "name": "Bedicort® G",
+        "name": "Bedicort G",
         "substance": "Betamethasone dipropionate"
     },
     {
-        "name": "Bedicort® G - (IR)",
+        "name": "Bedicort G - (IR)",
         "substance": "Betahistine dihydrochloride"
     },
     {
-        "name": "Bedicort® salic",
+        "name": "Bedicort salic",
         "substance": "Betamethasone dipropionate"
     },
     {
@@ -5368,7 +5368,7 @@
         "substance": "Atropine sulphate"
     },
     {
-        "name": "Bellergot®",
+        "name": "Bellergot",
         "substance": "Atropa belladonna extract"
     },
     {
@@ -5404,7 +5404,7 @@
         "substance": "Vitamins"
     },
     {
-        "name": "Bemecor®",
+        "name": "Bemecor",
         "substance": "Metildigoxin"
     },
     {
@@ -5412,19 +5412,19 @@
         "substance": "Follitropin alfa"
     },
     {
-        "name": "Benalapril® 10",
+        "name": "Benalapril 10",
         "substance": "Enalapril maleate"
     },
     {
-        "name": "Benalapril® 20",
+        "name": "Benalapril 20",
         "substance": "Enalapril maleate"
     },
     {
-        "name": "Benalapril® 5",
+        "name": "Benalapril 5",
         "substance": "Enalapril maleate"
     },
     {
-        "name": "Benalapril® 5 - (IR)",
+        "name": "Benalapril 5 - (IR)",
         "substance": "Enalapril maleate"
     },
     {

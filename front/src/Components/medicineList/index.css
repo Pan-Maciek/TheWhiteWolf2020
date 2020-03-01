@@ -1,5 +1,6 @@
 .medicineListDiv {
     font-size:18px;
+    margin-top: 30px;
 }
 .someMedicine {
     display: flex;
@@ -59,4 +60,51 @@
 
 #addMedicineSubmit {
     display: block;
+}
+
+.medicineListDiv table thead tr {
+    background: #ffde5c;
+    border-bottom: solid 1px #00000096;
+}
+
+.medicineListDiv table td {
+    border-left: solid 1px #1f1f1f87;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.medicineListDiv table td:first-child {
+    border-left: none;
+}
+.wrap1 {
+    border: solid 1px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 1px 6px 0 #ccc;
+}
+
+.addNew1 {
+    position: absolute;
+    border-radius: 100%;
+    border: solid 1px;
+    width: 40px;
+    height: 40px;
+    top: 63px;
+    transition-duration: 0.3s;
+    right: 0;
+    /* right: -50px; */
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.addNew1.active {
+    right: -50xp;
+}
+tr {
+    transition-duration: 0.3s;
+}
+.warn:nth-child(even) {
+    background-color: #e46c6c !important;
+}
+.warn:nth-child(odd) {
+    background-color: #bd5d5d !important;
 }

@@ -19,7 +19,7 @@ async function clear(){ await page.evaluate(() => clearallmdic()) }
 async function add(name) {
     await page.evaluate(() => document.querySelector('#MDICtextbox').value = '')
     await page.type('#MDICtextbox', name)
-    await wait(0.5)
+    await wait(0.7)
     await page.evaluate(() => document.querySelector('#MDICdrugs li a').click())
 }
 

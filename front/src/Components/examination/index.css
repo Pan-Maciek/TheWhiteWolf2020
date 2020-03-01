@@ -28,6 +28,6 @@
     width: 6%;
 }
 
-td:last-child {
+.examinationContainer td:last-child {
     cursor: pointer;
 }

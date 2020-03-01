@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './components/sidebar';
+import Sidebar from './components/UserSidebar';
 import MainPatientScreen from './components/mainPatientScreen'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import ExaminationHistory from "./components/examinationHistory";
 import MedicineList from "./components/medicineList";
+import Personal from './components/PersonalPatientPanel'
 
 
 const publicVapidKey =
@@ -67,6 +68,7 @@ function urlBase64ToUint8Array(base64String) {
               <Switch>
                 <Route path="/pacjent">
                   <MainPatientScreen patient={ { name: 'Mati', surname: 'Obrzut', PESEL: '80110185932' }} />
+                  {/*<Personal drugs={[]}/>*/}
                 </Route>
                 <Route path="/leki">
                   <MedicineList/>
@@ -75,9 +77,7 @@ function urlBase64ToUint8Array(base64String) {
                   <ExaminationHistory/>
                 </Route>
                 <Route path="/">
-                  <h1>
-                    Proszę wybać pacjenta
-                  </h1>
+                  <Redirect to="/leki" />
                 </Route>
   
               </Switch>

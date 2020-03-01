@@ -18,7 +18,7 @@ export default class MainPatientScreen extends React.Component {
     getData() {
         axios.get(`/api/get_all/${localStorage.getItem("uid")}`)
             .then(res => {
-                this.setState({name: res.data[0].name, surname: res.data[0].surname, age: this.ageFromPESEL(res.data[0].pesel), birthDate: this.DOBfromPESEL(res.data[0].pesel), pesel: res.data[0].pesel});
+                this.setState({ name: res.data[0].name, surname: res.data[0].surname, age: this.ageFromPESEL(res.data[0].pesel), birthDate: this.DOBfromPESEL(res.data[0].pesel), pesel: res.data[0].pesel });
             });
     }
 
@@ -28,9 +28,10 @@ export default class MainPatientScreen extends React.Component {
     }
     render() {
         return (
-            <div style={{    marginTop: "30px", marginRight: '88px'}}>
+            <div style={{ marginTop: "30px", marginRight: '88px' }}>
+                <h2>Informacje o pacjencie</h2>
                 <div className="patientTableContainer">
-                    <table style={{maxWidth:"657px"}}>
+                    <table style={{ maxWidth: "657px" }}>
                         <tbody>
                             <tr>
                                 <td>Imię</td>
