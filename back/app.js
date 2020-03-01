@@ -1,10 +1,43 @@
 const express = require('express');
-const app = express();
-const port = 5000;
+const webPush = require('web-push');
+const path = require('path');
 const bodyParser = require('body-parser');
 const Datastore = require('nedb')
 const cron = require('node-cron');
 const { runReminders } = require('./extras');
+
+const app = express();
+const port = 5000;
+
+//set static path
+app.use(express.static('../front/src'));
+
+//bodyParser setup
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+//push notifications
+const publicVapidKey =
+'BHF3G5cqLOzPnFaOCekYqUu7EUy9o0XyUSiQKhUyvfjv3T1M_x-0xMJgHFnbhEIOfZ3ysZpQQZOhSJee_9NdzIo';
+const privateVapidKey =
+'nXdTf3itrlaKXq6toaVZMQEor52rOB6RYHDBMsFPhDg';
+
+webPush.setVapidDetails('mailto:test@test.com', publicVapidKey, privateVapidKey);
+
+app.post('/subscribe', (req, res) => {
+    //get pushsubscription object
+    const subscription = req.body;
+
+    //send 201 - resource created
+    res.status(201).json({});
+
+    //create payload
+    const payload = JSON.stringify({ title: 'Push Test' });
+
+    //pass object into sendNotification
+    webPush.sendNotification(subscription, payload).catch(err => console.error(err));
+
+});
 
 //db setup
 const patientDb = new Datastore({filename: './patientDb.json', autoload: true});
@@ -15,10 +48,6 @@ cron.schedule('30 * * * *', () => {
     medTrackerDb.persistence.compactDatafile();
     runReminders(medTrackerDb);
 });
-
-//bodyParser setup
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 
 //-----GET ENDPOINTS-----
